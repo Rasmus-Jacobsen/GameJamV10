@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,9 @@ public class GameManager : MonoBehaviour
 
     public Player player;
     public Enemy enemy;
+
+    public List<MonoBehaviour> combatants = new List<MonoBehaviour>();
+    int currentCombatantIndex = 0;
     public enum GameState
     {
         PlayerTurn = 0,

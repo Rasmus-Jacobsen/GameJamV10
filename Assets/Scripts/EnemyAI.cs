@@ -19,5 +19,12 @@ public class Enemy : MonoBehaviour
         health -= damage;
         Debug.Log($"Enemy takes {damage} damage, HP left: {health}");
         if (health <= 0) Debug.Log("Enemy defeated!");
+       
+    }
+    public void Death()
+    {
+            Debug.Log("Enemy has been defeated!");
+            // Add death animation or effects here
+            Destroy(gameObject);
     }
 }

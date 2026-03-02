@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     private bool canAct = false;
     public Button attackButton, blockButton, restButton;
 
+
+    public LayerMask mask;
+    Enemy target;
+
     public void StartTurn()
     {
         canAct = true;
@@ -17,10 +21,19 @@ public class Player : MonoBehaviour
         blockButton.onClick.AddListener(OnBlockButton);
     }
 
+    private void Update()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 0, mask);
+        if (hit.collider != null && Input.GetMouseButtonDown(0))
+        {
+            target = hit.collider.GetComponent<Enemy>();
+        }
+    }
+
     private void OnAttackButton()
     {
         // Use the enemy reference from the GameManager
-        Attack(GameManager.Instance.enemy);
+        Attack(target);
     }
 
     private void OnBlockButton()
@@ -42,9 +55,11 @@ public class Player : MonoBehaviour
     {
         if (!canAct) return;
 
-        // Implement blocking behavior here
+        
         Debug.Log("Player blocks this turn.");
+
         EndTurn();
+
     }
 
     private void EndTurn()

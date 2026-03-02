@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Combatant
 {
-    public int health = 80;
-    public int attackPower = 15;
 
-    public void StartTurn()
+    public override void StartTurn()
     {
         // Simple AI: always attack
         Player player = GameManager.Instance.player;
@@ -19,12 +17,12 @@ public class Enemy : MonoBehaviour
         health -= damage;
         Debug.Log($"Enemy takes {damage} damage, HP left: {health}");
         if (health <= 0) Debug.Log("Enemy defeated!");
-       
+
     }
     public void Death()
     {
-            Debug.Log("Enemy has been defeated!");
-            // Add death animation or effects here
-            Destroy(gameObject);
+        Debug.Log("Enemy has been defeated!");
+
+        Destroy(gameObject);
     }
 }

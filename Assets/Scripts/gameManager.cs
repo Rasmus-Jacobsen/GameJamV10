@@ -5,11 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+
+
+    public List<Combatant> combatants = new List<Combatant>();
+    int currentCombatantIndex = 0;
     public Player player;
     public Enemy enemy;
 
-    public List<MonoBehaviour> combatants = new List<MonoBehaviour>();
-    int currentCombatantIndex = 0;
     public enum GameState
     {
         PlayerTurn = 0,
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartPlayerTurn();
+        combatants[currentCombatantIndex].StartTurn();
     }
 
     public void StartPlayerTurn()
@@ -50,13 +53,15 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
-        if (CurrentState == GameState.PlayerTurn)
+        if (combatants.Count <= 1)
         {
-            StartEnemyTurn();
+            //battle klar
         }
-        else if (CurrentState == GameState.EnemyTurn)
+        currentCombatantIndex++;
+        if (currentCombatantIndex >= combatants.Count)
         {
-            StartPlayerTurn();
+            currentCombatantIndex = 0;
         }
+            combatants[currentCombatantIndex].StartTurn();
     }
 }

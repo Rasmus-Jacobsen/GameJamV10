@@ -119,6 +119,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &195492371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 195492372}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &195492372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195492371}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 105.31603, y: 8.520334, z: -2.9004767}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1603096196}
+  - {fileID: 1901626133}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286991137
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,9 +284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f30610d29cb5f43b1eee11a2fc5135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatants:
+  - {fileID: 1603096197}
+  - {fileID: 569889544}
+  - {fileID: 1901626131}
   player: {fileID: 569889544}
   enemy: {fileID: 1603096197}
-  combatants: []
   CurrentState: 1
 --- !u!4 &297819092
 Transform:
@@ -1140,12 +1176,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603096194}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95, y: -2.19, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -102.366035, y: -10.710335, z: 2.9004767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 195492372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1603096197
 MonoBehaviour:
@@ -1159,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a00f7646fd4de0349bc2510c19b4fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 100
   attackPower: 15
 --- !u!61 &1603096198
 BoxCollider2D:
@@ -1441,12 +1477,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901626130}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95, y: 1.12, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -102.366035, y: -7.4003344, z: 2.9004767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 195492372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1901626134
 BoxCollider2D:
@@ -1500,9 +1536,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1603096196}
-  - {fileID: 1901626133}
   - {fileID: 569889546}
   - {fileID: 297819092}
   - {fileID: 286991141}
   - {fileID: 1006873302}
+  - {fileID: 195492372}

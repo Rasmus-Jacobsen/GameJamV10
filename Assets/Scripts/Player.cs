@@ -1,10 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour
+public class Player : Combatant
 {
-    public int health = 100;
-    public int attackPower = 20;
     private bool canAct = false;
     public Button attackButton, blockButton, restButton;
 
@@ -12,7 +10,7 @@ public class Player : MonoBehaviour
     public LayerMask mask;
     Enemy target;
 
-    public void StartTurn()
+    public override void StartTurn()
     {
         canAct = true;
         Debug.Log("Choose your action!");
@@ -55,7 +53,7 @@ public class Player : MonoBehaviour
     {
         if (!canAct) return;
 
-        
+
         Debug.Log("Player blocks this turn.");
 
         EndTurn();

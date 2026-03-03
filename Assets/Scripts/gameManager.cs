@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     {
         if (combatants.Count <= 1)
         {
-            //battle klar
+            
         }
         currentCombatantIndex++;
         if (currentCombatantIndex >= combatants.Count)

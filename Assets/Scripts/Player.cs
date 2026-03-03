@@ -38,7 +38,14 @@ public class Player : Combatant
     {
         BlockAction();
     }
+    public void BlockAction()
+    {
+        if (!canAct) return;
+        if (target == null) return;
+        blocking = true;
+        EndTurn();
 
+    }
     public void Attack(Enemy target)
     {
         if (!canAct) return;
@@ -49,16 +56,7 @@ public class Player : Combatant
         EndTurn();
     }
 
-    public void BlockAction()
-    {
-        if (!canAct) return;
-
-
-        Debug.Log("Player blocks this turn.");
-
-        EndTurn();
-
-    }
+   
 
     private void EndTurn()
     {
@@ -67,5 +65,11 @@ public class Player : Combatant
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
         GameManager.Instance.EndTurn();
+    }
+    public void Death()
+    {
+        Debug.Log("Enemy has been defeated!");
+
+        Destroy(gameObject);
     }
 }

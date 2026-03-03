@@ -5,7 +5,7 @@ public class Combatant : MonoBehaviour
     public int health = 80;
     public int attackPower = 2;
     public bool blocking;
-    
+    int energy;
     public virtual void StartTurn()
     {
 
@@ -18,7 +18,7 @@ public class Combatant : MonoBehaviour
             Debug.Log($"{gameObject.name} is blocking! Damage reduced.");
         }
         health -= damage;
-       
+
         if (health <= 0) Death();
 
     }
@@ -29,4 +29,12 @@ public class Combatant : MonoBehaviour
         Destroy(gameObject);
     }
    
+  
+    public virtual void skipturn()
+    {
+        Debug.Log($"{gameObject.name} skipped their turn.");
+        energy++;
+        GameManager.Instance.EndTurn();
+    }
+
 }

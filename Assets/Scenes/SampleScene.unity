@@ -290,7 +290,7 @@ MonoBehaviour:
   - {fileID: 1901626131}
   player: {fileID: 569889544}
   enemy: {fileID: 1603096197}
-  CurrentState: 1
+  CurrentState: 0
 --- !u!4 &297819092
 Transform:
   m_ObjectHideFlags: 0
@@ -613,6 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackPower: 20
+  blocking: 0
   attackButton: {fileID: 808729143}
   blockButton: {fileID: 1271565609}
   restButton: {fileID: 0}
@@ -1197,6 +1198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackPower: 15
+  blocking: 0
 --- !u!61 &1603096198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1414,6 +1416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 80
   attackPower: 15
+  blocking: 0
 --- !u!212 &1901626132
 SpriteRenderer:
   m_ObjectHideFlags: 0

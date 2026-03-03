@@ -33,8 +33,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartPlayerTurn();
         combatants[currentCombatantIndex].StartTurn();
+        StartPlayerTurn();
+        
     }
 
     public void StartPlayerTurn()

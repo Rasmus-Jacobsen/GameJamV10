@@ -4,11 +4,39 @@ public class Enemy : Combatant
 {
     public override void StartTurn()
     {
-        // Simple AI: attack the player using Combatant.TakeDamage so blocking works
+        
         Player player = GameManager.Instance.player;
         if (player != null)
         {
-            player.TakeDamage(attackPower);
+            
+            int x = Random.Range(0, 60);
+            if (health <= 50)
+            {
+                if (x < 5)
+                {
+                    player.TakeDamage(attackPower);
+                }
+                else if (x < 45 )
+                {
+                    blocking = true;
+                }
+                else if (x < 55)
+                {
+                    skipturn();
+                }
+            }
+            if (health > 50)
+            {
+                if (x < 5)
+                {
+                    player.TakeDamage(attackPower);
+                }
+                else if (x < 45)
+                {
+                    //block
+                }
+            }
+          
             Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
         }
         
@@ -19,8 +47,6 @@ public class Enemy : Combatant
 
     public override void TakeDamage(int damage)
     {
-        // Use the shared logic in Combatant (handles blocking, death)
         base.TakeDamage(damage);
-        // Additional enemy-specific reactions can be added here
     }
 }

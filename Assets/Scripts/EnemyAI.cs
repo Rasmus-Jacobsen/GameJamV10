@@ -29,6 +29,11 @@ public class Enemy : Combatant
                     skipturn();
                     
                 }
+                else
+                {
+                    Attack(player);
+
+                }
 
             }
             if (health > 50)
@@ -43,7 +48,11 @@ public class Enemy : Combatant
                 else if (x < 45)
                 {
                     Block();
-                    
+
+                }
+                else
+                {
+                    Attack(player);
                 }
 
                 

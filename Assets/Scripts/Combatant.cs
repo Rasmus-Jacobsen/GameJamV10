@@ -60,12 +60,13 @@ public class Combatant : MonoBehaviour
         energy++;
         GameManager.Instance.EndTurn();
     }
-    public virtual void SpecialAttack(int damage)
+    public virtual void SpecialAttack(int specialAttackDamage)
     {
-        damage = 5;
-        damage += attackPower;
-        health -= damage;
-        if (health <= 0) Death();
+        specialAttackDamage = 30;
+        blocking = false;
+        Debug.Log($"{gameObject.name} performs a special attack for {specialAttackDamage} damage!");
+        specialAttackDamage -= health;
+        GameManager.Instance.EndTurn();
     }
 
 }

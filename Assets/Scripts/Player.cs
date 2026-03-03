@@ -19,6 +19,7 @@ public class Player : Combatant
         blockButton.onClick.AddListener(OnBlockButton);
         restButton.onClick.AddListener(OnRestButton);
         specialAttack.onClick.AddListener(OnSpecialAttackButton);
+
     }
 
     private void Update()
@@ -42,7 +43,7 @@ public class Player : Combatant
             Debug.Log("Not enough energy for special attack!");
         }
         
-        else
+        else if (energy > 1) 
         {
             energy--;
             Debug.Log("Special Attack!");

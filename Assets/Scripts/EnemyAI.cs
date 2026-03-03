@@ -15,14 +15,17 @@ public class Enemy : Combatant
                 if (x < 5)
                 {
                     player.TakeDamage(attackPower);
+                    Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
                 }
                 else if (x < 45 )
                 {
                     blocking = true;
+                    Debug.Log($"{gameObject.name} is blocking!");
                 }
                 else if (x < 55)
                 {
                     skipturn();
+                    Debug.Log($"{gameObject.name} skipped the turn!");
                 }
             }
             if (health > 50)
@@ -30,10 +33,12 @@ public class Enemy : Combatant
                 if (x < 5)
                 {
                     player.TakeDamage(attackPower);
+                    Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
                 }
                 else if (x < 45)
                 {
-                    //block
+                    blocking = true;
+                    Debug.Log($"{gameObject.name} is blocking!");
                 }
             }
           

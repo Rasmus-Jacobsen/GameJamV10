@@ -14,9 +14,10 @@ public class Player : Combatant
     {
         canAct = true;
         Debug.Log("Choose your action!");
-        // Enable buttons here if using Unity UI
+        
         attackButton.onClick.AddListener(OnAttackButton);
         blockButton.onClick.AddListener(OnBlockButton);
+        restButton.onClick.AddListener(OnSkipButton);
     }
 
     private void Update()
@@ -45,6 +46,10 @@ public class Player : Combatant
         blocking = true;
         EndTurn();
 
+    }
+    private void OnSkipButton()
+    {
+        skipturn();
     }
     public void Attack(Enemy target)
     {

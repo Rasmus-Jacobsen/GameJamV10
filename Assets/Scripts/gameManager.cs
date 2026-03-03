@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         PlayerTurn = 0,
-        EnemyTurn = 1
+        EnemyTurn = 0,
     }
     public GameState CurrentState;
 
@@ -33,9 +33,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        combatants[currentCombatantIndex].StartTurn();
-        StartPlayerTurn();
         
+        StartPlayerTurn();
+        combatants[currentCombatantIndex].StartTurn();
     }
 
     public void StartPlayerTurn()

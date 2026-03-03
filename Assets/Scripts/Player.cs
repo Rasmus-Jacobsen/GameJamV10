@@ -17,21 +17,26 @@ public class Player : Combatant
         
         attackButton.onClick.AddListener(OnAttackButton);
         blockButton.onClick.AddListener(OnBlockButton);
-        restButton.onClick.AddListener(OnSkipButton);
+        restButton.onClick.AddListener(OnRestButton);
     }
 
     private void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 0, mask);
-        if (hit.collider != null && Input.GetMouseButtonDown(0))
+        // Correct hit detection: use OverlapPoint to pick objects under the mouse
+        if (Input.GetMouseButtonDown(0))
         {
-            target = hit.collider.GetComponent<Enemy>();
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Collider2D col = Physics2D.OverlapPoint(worldPoint, mask);
+            if (col != null)
+            {
+                target = col.GetComponent<Enemy>();
+            }
         }
     }
 
     private void OnAttackButton()
     {
-        // Use the enemy reference from the GameManager
+        // Use the selected target
         Attack(target);
     }
 
@@ -42,14 +47,14 @@ public class Player : Combatant
     public void BlockAction()
     {
         if (!canAct) return;
-        if (target == null) return;
         blocking = true;
         EndTurn();
 
     }
-    private void OnSkipButton()
+    public void OnRestButton()
     {
-        skipturn();
+        if (!canAct) return;
+        Rest();
     }
     public void Attack(Enemy target)
     {
@@ -66,7 +71,7 @@ public class Player : Combatant
     private void EndTurn()
     {
         canAct = false;
-        // Remove listeners to avoid duplicate subscriptions next turn
+        
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
         GameManager.Instance.EndTurn();

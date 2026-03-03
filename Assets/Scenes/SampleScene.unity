@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 1838990862}
   - component: {fileID: 1838990861}
   m_Layer: 5
-  m_Name: '   restButton'
+  m_Name: RestButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

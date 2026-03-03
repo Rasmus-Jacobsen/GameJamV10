@@ -3,9 +3,9 @@ using UnityEngine;
 public class Combatant : MonoBehaviour
 {
     public int health = 80;
-    public int attackPower = 2;
+    public int attackPower = 20;
     public bool blocking;
-    int energy;
+    public int energy;
     public virtual void StartTurn()
     {
 
@@ -59,6 +59,13 @@ public class Combatant : MonoBehaviour
         Debug.Log($"{gameObject.name} skipped their turn.");
         energy++;
         GameManager.Instance.EndTurn();
+    }
+    public virtual void SpecialAttack(int damage)
+    {
+        damage = 5;
+        damage += attackPower;
+        health -= damage;
+        if (health <= 0) Death();
     }
 
 }

@@ -4,12 +4,12 @@ using UnityEngine.UI;
 public class Player : Combatant
 {
     private bool canAct = false;
-    public Button attackButton, blockButton, restButton;
+    public Button attackButton, blockButton, restButton, specialAttack;
 
 
     public LayerMask mask;
     Enemy target;
-
+    
     public override void StartTurn()
     {
         canAct = true;
@@ -18,6 +18,7 @@ public class Player : Combatant
         attackButton.onClick.AddListener(OnAttackButton);
         blockButton.onClick.AddListener(OnBlockButton);
         restButton.onClick.AddListener(OnRestButton);
+        specialAttack.onClick.AddListener(OnSpecialAttackButton);
     }
 
     private void Update()
@@ -33,15 +34,31 @@ public class Player : Combatant
             }
         }
     }
+    public void OnSpecialAttackButton()
+    {
+        if (!canAct) return;
+        if (energy < 1)
+        {
+            Debug.Log("Not enough energy for special attack!");
+        }
+        
+        else
+        {
+            energy--;
+            Debug.Log("Special Attack!");
 
-    private void OnAttackButton()
+        }
+    }
+
+    public void OnAttackButton()
     {
         // Use the selected target
         Attack(target);
     }
 
-    private void OnBlockButton()
+    public void OnBlockButton()
     {
+        if (!canAct) return;
         BlockAction();
     }
     public void BlockAction()
@@ -81,5 +98,7 @@ public class Player : Combatant
         Debug.Log("Enemy has been defeated!");
 
         Destroy(gameObject);
+    
+
     }
 }

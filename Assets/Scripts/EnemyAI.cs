@@ -12,50 +12,52 @@ public class Enemy : Combatant
             int x = Random.Range(0, 60);
             if (health <= 50)
             {
-                if (x < 5)
+                if (x <= 5)
                 {
-                    blocking = false;
-                    player.TakeDamage(attackPower);
-                    Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
+
+                    Attack(player);
                     
                 }
-                else if (x < 45 )
+                else if (x <= 50)
                 {
-                    blocking = true;
-                    Debug.Log($"{gameObject.name} is blocking!");
+                    Block();
+
+                    
                 }
-                else if (x < 55)
+                else if (x <= 55)
                 {
-                    blocking = false;
                     skipturn();
-                    Debug.Log($"{gameObject.name} skipped the turn!");
+                    
                 }
+
             }
             if (health > 50)
             {
                 if (x < 5)
                 {
-                    blocking = false;
-                    player.TakeDamage(attackPower);
-                    Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
+                    
+                    Attack(player);
+
+                    
                 }
                 else if (x < 45)
                 {
-                    blocking = true;
-                    Debug.Log($"{gameObject.name} is blocking!");
+                    Block();
+                    
                 }
+
+                
             }
           
             Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
+
+            
         }
-        
-        
+       
 
-        GameManager.Instance.EndTurn();
+
+
     }
 
-    public override void TakeDamage(int damage)
-    {
-        base.TakeDamage(damage);
-    }
+
 }

@@ -4,12 +4,12 @@ using UnityEngine.UI;
 public class Player : Combatant
 {
     private bool canAct = false;
-    public Button attackButton, blockButton, restButton;
+    public Button attackButton, blockButton, restButton, specialAttack;
 
 
     public LayerMask mask;
     Enemy target;
-
+    
     public override void StartTurn()
     {
         canAct = true;
@@ -17,39 +17,61 @@ public class Player : Combatant
         
         attackButton.onClick.AddListener(OnAttackButton);
         blockButton.onClick.AddListener(OnBlockButton);
-        restButton.onClick.AddListener(OnSkipButton);
+        restButton.onClick.AddListener(OnRestButton);
+        specialAttack.onClick.AddListener(OnSpecialAttackButton);
     }
 
     private void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 0, mask);
-        if (hit.collider != null && Input.GetMouseButtonDown(0))
+        // Correct hit detection: use OverlapPoint to pick objects under the mouse
+        if (Input.GetMouseButtonDown(0))
         {
-            target = hit.collider.GetComponent<Enemy>();
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Collider2D col = Physics2D.OverlapPoint(worldPoint, mask);
+            if (col != null)
+            {
+                target = col.GetComponent<Enemy>();
+            }
+        }
+    }
+    public void OnSpecialAttackButton()
+    {
+        if (!canAct) return;
+        if (energy < 1)
+        {
+            Debug.Log("Not enough energy for special attack!");
+        }
+        
+        else
+        {
+            energy--;
+            Debug.Log("Special Attack!");
+
         }
     }
 
-    private void OnAttackButton()
+    public void OnAttackButton()
     {
-        // Use the enemy reference from the GameManager
+        // Use the selected target
         Attack(target);
     }
 
-    private void OnBlockButton()
+    public void OnBlockButton()
     {
+        if (!canAct) return;
         BlockAction();
     }
     public void BlockAction()
     {
         if (!canAct) return;
-        if (target == null) return;
         blocking = true;
         EndTurn();
 
     }
-    private void OnSkipButton()
+    public void OnRestButton()
     {
-        skipturn();
+        if (!canAct) return;
+        Rest();
     }
     public void Attack(Enemy target)
     {
@@ -66,7 +88,7 @@ public class Player : Combatant
     private void EndTurn()
     {
         canAct = false;
-        // Remove listeners to avoid duplicate subscriptions next turn
+        
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
         GameManager.Instance.EndTurn();
@@ -76,5 +98,7 @@ public class Player : Combatant
         Debug.Log("Enemy has been defeated!");
 
         Destroy(gameObject);
+    
+
     }
 }

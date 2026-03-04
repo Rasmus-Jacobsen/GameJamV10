@@ -42,6 +42,7 @@ public class Player : Combatant
 
        
         if (!canAct) return;
+
         if (energy < 1)
         {
             
@@ -85,6 +86,7 @@ public class Player : Combatant
         if (target == null) return;
 
         target.TakeDamage(attackPower);
+
         EndTurn();
     }
 

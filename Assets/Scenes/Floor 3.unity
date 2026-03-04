@@ -773,7 +773,9 @@ Transform:
   m_LocalPosition: {x: 5.45, y: 0.41, z: 0}
   m_LocalScale: {x: 1.8383795, y: 1.5153873, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2014837569}
+  - {fileID: 1481678233}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &997578367
@@ -838,8 +840,6 @@ MonoBehaviour:
   attackPower: 20
   blocking: 0
   energy: 0
-  cooldown: 0
-  cooldownTime: 2
 --- !u!1 &1161427691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,11 +1139,11 @@ Transform:
   m_GameObject: {fileID: 1481678232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1682305, y: 0.05827862, z: 0}
-  m_LocalScale: {x: 1.640206, y: 1.7481705, z: 1}
+  m_LocalPosition: {x: -2.3291, y: -0.2321, z: 0}
+  m_LocalScale: {x: 0.8922021, y: 1.153613, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 997578366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1481678234
 SpriteRenderer:
@@ -1262,8 +1262,6 @@ MonoBehaviour:
   attackPower: 20
   blocking: 0
   energy: 0
-  cooldown: 0
-  cooldownTime: 2
 --- !u!1 &1626883853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,8 +1740,6 @@ MonoBehaviour:
   attackPower: 20
   blocking: 0
   energy: 0
-  cooldown: 0
-  cooldownTime: 2
   attackButton: {fileID: 2129474762}
   blockButton: {fileID: 1626883855}
   restButton: {fileID: 1715192957}
@@ -1868,11 +1864,11 @@ Transform:
   m_GameObject: {fileID: 2014837568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.366748, y: 0.5688126, z: 0}
-  m_LocalScale: {x: 1.9825492, y: 1.6070515, z: 1}
+  m_LocalPosition: {x: -1.1332, y: 0.1048, z: 0}
+  m_LocalScale: {x: 1.0784222, y: 1.0604889, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 997578366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2014837570
 SpriteRenderer:
@@ -1991,8 +1987,6 @@ MonoBehaviour:
   attackPower: 20
   blocking: 0
   energy: 0
-  cooldown: 0
-  cooldownTime: 2
 --- !u!1 &2129474760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,8 +2113,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 442314741}
   - {fileID: 337594234}
-  - {fileID: 2014837569}
-  - {fileID: 1481678233}
   - {fileID: 997578366}
   - {fileID: 2001181226}
   - {fileID: 484420923}

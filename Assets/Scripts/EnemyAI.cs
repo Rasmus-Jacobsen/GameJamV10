@@ -5,7 +5,7 @@ public class Enemy : Combatant
     public override void StartTurn()
     {
         
-        Player player = GameManager.Instance.player;
+        Player player = FindAnyObjectByType<Player>();
         if (player != null)
         {
             

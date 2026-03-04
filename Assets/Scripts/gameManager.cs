@@ -54,6 +54,13 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
+        for (int i = 0; i < combatants.Count; i++)
+        {
+            if (combatants[i] == null)
+            {
+                combatants.RemoveAt(i);
+            }
+        }
         if (combatants.Count <= 1)
         {
             

@@ -46,7 +46,7 @@ public class Enemy : Combatant
                     canAct = false;
 
                 }
-                else if (x < 45)
+                else if (x > 55)
                 {
                     Block();
                     canAct = false;
@@ -59,9 +59,6 @@ public class Enemy : Combatant
 
 
             }
-
-            Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
-
 
         }
 

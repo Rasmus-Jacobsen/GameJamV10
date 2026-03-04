@@ -24,7 +24,7 @@ public class Player : Combatant
 
     private void Update()
     {
-        // Correct hit detection: use OverlapPoint to pick objects under the mouse
+        //slecting target with mouse click
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);

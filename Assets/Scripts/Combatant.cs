@@ -37,7 +37,7 @@ public class Combatant : MonoBehaviour
         GameManager.Instance.EndTurn();
     }
    
-    public void Death()
+    public virtual void Death()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
 

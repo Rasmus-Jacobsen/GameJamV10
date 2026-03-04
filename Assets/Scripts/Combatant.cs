@@ -32,6 +32,7 @@ public class Combatant : MonoBehaviour
         Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
         target.TakeDamage(attackPower);
         GameManager.Instance.EndTurn();
+
     }
     public virtual void Block()
     {

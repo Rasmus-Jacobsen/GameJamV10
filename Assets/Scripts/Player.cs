@@ -69,14 +69,14 @@ public class Player : Combatant
     {
         if (!canAct) return;
         blocking = true;
-        EndTurn();
+        
 
     }
     public void OnRestButton()
     {
         if (!canAct) return;
         Rest();
-        EndTurn();
+        
     }
   
 

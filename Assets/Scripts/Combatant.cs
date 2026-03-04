@@ -6,6 +6,8 @@ public class Combatant : MonoBehaviour
     public int attackPower = 20;
     public bool blocking;
     public int energy;
+    public bool cooldown;
+    public float cooldownTime = 2f;
     public virtual void StartTurn()
     {
 
@@ -25,6 +27,7 @@ public class Combatant : MonoBehaviour
 
     public virtual void Attack(Combatant target)
     {
+
         blocking = false;
         Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
         target.TakeDamage(attackPower);
@@ -32,6 +35,7 @@ public class Combatant : MonoBehaviour
     }
     public virtual void Block()
     {
+        
         blocking = true;
         Debug.Log($"{gameObject.name} is blocking this turn!");
         GameManager.Instance.EndTurn();

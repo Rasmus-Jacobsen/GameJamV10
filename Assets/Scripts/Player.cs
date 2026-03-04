@@ -5,6 +5,7 @@ public class Player : Combatant
 {
     private bool canAct = false;
     public Button attackButton, blockButton, restButton, specialAttack;
+   
 
 
     public LayerMask mask;
@@ -37,16 +38,19 @@ public class Player : Combatant
     }
     public void OnSpecialAttackButton()
     {
+        cooldown = true;
+
+       
         if (!canAct) return;
         if (energy < 1)
         {
-            Debug.Log("Not enough energy for special attack!");
+            
         }
         
         else if (energy > 1) 
         {
             energy--;
-            Debug.Log("Special Attack!");
+           
 
         }
     }
@@ -92,14 +96,9 @@ public class Player : Combatant
         
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
+        restButton.onClick.RemoveListener(OnRestButton);
+        specialAttack.onClick.RemoveListener(OnSpecialAttackButton);
         GameManager.Instance.EndTurn();
     }
-    public void Death()
-    {
-        Debug.Log("Enemy has been defeated!");
-
-        Destroy(gameObject);
-    
-
-    }
+   
 }

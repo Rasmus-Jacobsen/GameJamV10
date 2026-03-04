@@ -59,6 +59,7 @@ public class Combatant : MonoBehaviour
 
     public virtual void skipturn()
     {
+
         blocking = false;
         Debug.Log($"{gameObject.name} skipped their turn.");
         energy++;

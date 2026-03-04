@@ -4,11 +4,11 @@ public class Enemy : Combatant
 {
     public override void StartTurn()
     {
-        
+
         Player player = FindAnyObjectByType<Player>();
         if (player != null)
         {
-            
+
             int x = Random.Range(0, 60);
             if (health <= 50)
             {
@@ -16,18 +16,18 @@ public class Enemy : Combatant
                 {
 
                     Attack(player);
-                    
+
                 }
                 else if (x <= 50)
                 {
                     Block();
 
-                    
+
                 }
                 else if (x <= 55)
                 {
                     skipturn();
-                    
+
                 }
                 else
                 {
@@ -40,10 +40,10 @@ public class Enemy : Combatant
             {
                 if (x < 5)
                 {
-                    
+
                     Attack(player);
 
-                    
+
                 }
                 else if (x < 45)
                 {
@@ -55,14 +55,14 @@ public class Enemy : Combatant
                     Attack(player);
                 }
 
-                
+
             }
-          
+
             Debug.Log($"{gameObject.name} attacked! Player health: {player.health}");
 
-            
+
         }
-       
+
 
 
 

@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
         {
             currentCombatantIndex = 0;
         }
+        
         combatants[currentCombatantIndex].StartTurn();
     }
 }

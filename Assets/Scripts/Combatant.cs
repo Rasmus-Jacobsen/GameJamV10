@@ -8,8 +8,10 @@ public class Combatant : MonoBehaviour
     public int energy;
     public bool cooldown;
     public float cooldownTime = 2f;
+    public bool canAct = false;
     public virtual void StartTurn()
     {
+        canAct = true;
 
     }
     public virtual void TakeDamage(int damage)
@@ -25,20 +27,25 @@ public class Combatant : MonoBehaviour
 
     }
 
+    
+    protected virtual void OnEndTurn() { }
+
     public virtual void Attack(Combatant target)
     {
 
         blocking = false;
-        Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
+       
         target.TakeDamage(attackPower);
+        canAct = false;
+        OnEndTurn();
         GameManager.Instance.EndTurn();
 
     }
     public virtual void Block()
     {
-
+        canAct = false;
         blocking = true;
-        Debug.Log($"{gameObject.name} is blocking this turn!");
+        OnEndTurn();
         GameManager.Instance.EndTurn();
     }
 
@@ -51,26 +58,31 @@ public class Combatant : MonoBehaviour
     }
     public void Rest()
     {
+        canAct = false;
         blocking = false;
         energy++;
         Debug.Log($"{gameObject.name} rests and recovers energy. Current energy: {energy}");
+        OnEndTurn();
         GameManager.Instance.EndTurn();
     }
 
 
     public virtual void skipturn()
     {
-
+        canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} skipped their turn.");
         energy++;
+        OnEndTurn();
         GameManager.Instance.EndTurn();
     }
     public virtual void SpecialAttack(Combatant target)
     {
+        canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} performs a special attack!");
         target.TakeDamage(attackPower * 2);
+        OnEndTurn();
         GameManager.Instance.EndTurn();
     }
 

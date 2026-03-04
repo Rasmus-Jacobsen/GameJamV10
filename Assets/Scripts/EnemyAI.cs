@@ -4,9 +4,10 @@ public class Enemy : Combatant
 {
     public override void StartTurn()
     {
-
+        base.StartTurn();
+        
         Player player = FindAnyObjectByType<Player>();
-        if (player != null)
+        if (player != null && canAct)
         {
 
             int x = Random.Range(0, 60);
@@ -16,23 +17,23 @@ public class Enemy : Combatant
                 {
 
                     Attack(player);
-
+                    canAct = false;
                 }
                 else if (x <= 50)
                 {
                     Block();
-
+                    canAct = false;
 
                 }
                 else if (x <= 55)
                 {
                     skipturn();
-
+                    canAct = false;
                 }
                 else
                 {
                     Attack(player);
-
+                    canAct = false;
                 }
 
             }
@@ -42,17 +43,18 @@ public class Enemy : Combatant
                 {
 
                     Attack(player);
-
+                    canAct = false;
 
                 }
                 else if (x < 45)
                 {
                     Block();
-
+                    canAct = false;
                 }
                 else
                 {
                     Attack(player);
+                    canAct = false;
                 }
 
 

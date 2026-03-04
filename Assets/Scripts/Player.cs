@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Player : Combatant
 {
-    private bool canAct = false;
+    
     public Button attackButton, blockButton, restButton, specialAttack;
 
 
@@ -13,7 +13,7 @@ public class Player : Combatant
 
     public override void StartTurn()
     {
-        canAct = true;
+        base.StartTurn();
         Debug.Log("Choose your action!");
 
         attackButton.onClick.AddListener(OnAttackButton);
@@ -21,6 +21,16 @@ public class Player : Combatant
         restButton.onClick.AddListener(OnRestButton);
         specialAttack.onClick.AddListener(OnSpecialAttackButton);
 
+    }
+
+
+    protected override void OnEndTurn()
+    {
+        // remove UI listeners to avoid duplicate invocations next turn
+        attackButton.onClick.RemoveListener(OnAttackButton);
+        blockButton.onClick.RemoveListener(OnBlockButton);
+        restButton.onClick.RemoveListener(OnRestButton);
+        specialAttack.onClick.RemoveListener(OnSpecialAttackButton);
     }
 
     private void Update()
@@ -81,16 +91,5 @@ public class Player : Combatant
   
 
 
-
-    private void EndTurn()
-    {
-        canAct = false;
-
-        attackButton.onClick.RemoveListener(OnAttackButton);
-        blockButton.onClick.RemoveListener(OnBlockButton);
-        restButton.onClick.RemoveListener(OnRestButton);
-        specialAttack.onClick.RemoveListener(OnSpecialAttackButton);
-        GameManager.Instance.EndTurn();
-    }
 
 }

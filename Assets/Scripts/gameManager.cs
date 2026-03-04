@@ -33,8 +33,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
-
         combatants[currentCombatantIndex].StartTurn();
     }
 
@@ -70,7 +68,7 @@ public class GameManager : MonoBehaviour
         {
             currentCombatantIndex = 0;
         }
-        
-        combatants[currentCombatantIndex].StartTurn();
+        print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
+        combatants[currentCombatantIndex].Invoke("StartTurn", 1);// .StartTurn();
     }
 }

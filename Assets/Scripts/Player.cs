@@ -53,7 +53,7 @@ public class Player : Combatant
 
         if (energy < 1)
         {
-
+            return;
         }
 
         else if (energy > 1)

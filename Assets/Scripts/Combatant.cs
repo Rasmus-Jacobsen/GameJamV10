@@ -34,7 +34,7 @@ public class Combatant : MonoBehaviour
     {
 
         blocking = false;
-       
+       print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
         target.TakeDamage(attackPower);
         canAct = false;
         OnEndTurn();
@@ -45,6 +45,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = true;
+        print($"{gameObject.name} is blocking and will take reduced damage until their next turn!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }

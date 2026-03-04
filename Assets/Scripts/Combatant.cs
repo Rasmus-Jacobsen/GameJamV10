@@ -35,20 +35,20 @@ public class Combatant : MonoBehaviour
     }
     public virtual void Block()
     {
-        
+
         blocking = true;
         Debug.Log($"{gameObject.name} is blocking this turn!");
         GameManager.Instance.EndTurn();
     }
-   
+
     public virtual void Death()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
 
         Destroy(gameObject);
-      
+
     }
-   public void Rest()
+    public void Rest()
     {
         blocking = false;
         energy++;
@@ -67,9 +67,8 @@ public class Combatant : MonoBehaviour
     public virtual void SpecialAttack(Combatant target)
     {
         blocking = false;
-
         Debug.Log($"{gameObject.name} performs a special attack!");
-       target.TakeDamage(attackPower * 2);
+        target.TakeDamage(attackPower * 2);
         GameManager.Instance.EndTurn();
     }
 

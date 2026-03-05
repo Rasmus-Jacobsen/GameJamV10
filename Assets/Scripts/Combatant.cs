@@ -9,6 +9,7 @@ public class Combatant : MonoBehaviour
     public bool cooldown;
     public float cooldownTime = 2f;
     public bool canAct = false;
+    public int specialattackpower = 40;
     public virtual void StartTurn()
     {
         canAct = true;
@@ -21,6 +22,7 @@ public class Combatant : MonoBehaviour
             damage /= 2;
             Debug.Log($"{gameObject.name} is blocking! Damage reduced.");
         }
+       
         health -= damage;
 
         if (health <= 0) Death();
@@ -79,10 +81,10 @@ public class Combatant : MonoBehaviour
     }
     public virtual void SpecialAttack(Combatant target)
     {
+        target.TakeDamage(specialattackpower);
         canAct = false;
         blocking = false;
-        Debug.Log($"{gameObject.name} performs a special attack!");
-        target.TakeDamage(attackPower * 2);
+        Debug.Log($"{gameObject.name} performs a special attack on {target.gameObject.name} for {specialattackpower} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }

@@ -84,9 +84,43 @@ public class Combatant : MonoBehaviour
         target.TakeDamage(specialattackpower);
         canAct = false;
         blocking = false;
-        Debug.Log($"{gameObject.name} performs a special attack on {target.gameObject.name} for {specialattackpower} damage!");
+        Debug.Log($"{gameObject.name} special attacks  {target.gameObject.name} for {specialattackpower} damage");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
+    public virtual void bossattack1(Combatant target)
+    {
+        canAct = false;
+        blocking = false;
+        target.TakeDamage(attackPower + 10);
+        Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower + 10} damage!");
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
+    }
+    public virtual void bossattack2(Combatant target)
+    {
+        canAct = false;
+        blocking = false;
+        target.TakeDamage(attackPower + 20);
+        Debug.Log($"{gameObject.name} performs a devastating strike on {target.gameObject.name} for {attackPower + 20} damage!");
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
+    }
+    public virtual void bossattack3(Combatant target)
+    {
+        canAct = false;
+        blocking = false;
+        target.TakeDamage(attackPower + 30);
+        Debug.Log($"{gameObject.name} performs an special attack on {target.gameObject.name} for {attackPower + 30} damage!");
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
+    }
+    public virtual void Bossstats()
+    {
+        health += 120;
+        attackPower += 20;
+
+    }
+
 
 }

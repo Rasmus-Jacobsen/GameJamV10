@@ -237,8 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatants:
   - {fileID: 997578368}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1977696668}
   player: {fileID: 1977696668}
 --- !u!4 &430475432
@@ -754,6 +752,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
 --- !u!1 &1161427691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1592,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
   attackButton: {fileID: 2129474762}
   blockButton: {fileID: 1626883855}
   restButton: {fileID: 1715192957}

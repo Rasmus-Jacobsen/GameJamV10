@@ -157,6 +157,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
 --- !u!61 &242668606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -756,8 +757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128, y: -142}
-  m_SizeDelta: {x: 77.0695, y: 32.9146}
+  m_AnchoredPosition: {x: 193, y: -294.39}
+  m_SizeDelta: {x: 165.3496, y: 64.1355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633561798
 MonoBehaviour:
@@ -1150,6 +1151,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
 --- !u!61 &1489640076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1301,8 +1303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 378, y: -218}
-  m_SizeDelta: {x: 39.1239, y: 37.7557}
+  m_AnchoredPosition: {x: 611.1, y: -517.78}
+  m_SizeDelta: {x: 54.7, y: 44.4312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626883855
 MonoBehaviour:
@@ -1590,8 +1592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 323, y: -219}
-  m_SizeDelta: {x: 39.1239, y: 37.7557}
+  m_AnchoredPosition: {x: 726.79, y: -517.78}
+  m_SizeDelta: {x: 54.702, y: 44.433}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1892695280
 GameObject:
@@ -1834,6 +1836,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
   attackButton: {fileID: 2129474762}
   blockButton: {fileID: 1626883855}
   restButton: {fileID: 1715192957}
@@ -2169,6 +2172,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
 --- !u!1 &2129474760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,8 +2208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22, y: -142}
-  m_SizeDelta: {x: 77.0695, y: 32.9146}
+  m_AnchoredPosition: {x: -38.14, y: -294.39}
+  m_SizeDelta: {x: 165.35, y: 64.136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129474762
 MonoBehaviour:

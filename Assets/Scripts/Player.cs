@@ -56,7 +56,7 @@ public class Player : Combatant
             return;
         }
 
-        else if (energy > 1)
+        else if (energy >= 1)
         {
             SpecialAttack(target);
 

@@ -10,13 +10,22 @@ public class Healthbar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxHealth = combatant.health;
+        if (combatant != null)
+            maxHealth = combatant.health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        displayimage.sprite = healthSprites[ Mathf.RoundToInt((combatant.health/maxHealth)*healthSprites.Length)];
-        
+        if (combatant == null || displayimage == null || healthSprites == null || healthSprites.Length == 0) return;
+
+        // safe normalized health between0 and1
+        float ratio = Mathf.Clamp01((float)combatant.health / Mathf.Max(1f, maxHealth));
+
+        // compute index in range [0, healthSprites.Length-1]
+        int index = Mathf.RoundToInt(ratio * (healthSprites.Length - 1));
+        index = Mathf.Clamp(index, 0, healthSprites.Length - 1);
+
+        displayimage.sprite = healthSprites[index];
     }
 }

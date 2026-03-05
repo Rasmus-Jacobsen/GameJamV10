@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f452f383826ec245b84ea4abb1e8079
+guid: 57c0aa30fab0e9b4bbd12b319e2dd7a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6661024044440122085
-    second: Enemy_Healthbar-Sheet_0
+      213: -2440858401115220899
+    second: enemy healthbar 8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Healthbar-Sheet_0
+      name: enemy healthbar 8_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 132
-        height: 816
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e27039a316b07c50800000000000000
-      internalID: 6661024044440122085
+      spriteID: d54df766734502ed0800000000000000
+      internalID: -2440858401115220899
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy_Healthbar-Sheet_0: 6661024044440122085
+      enemy healthbar 8_0: -2440858401115220899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1159,8 +1159,8 @@ Transform:
   m_GameObject: {fileID: 1692199795}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 3, y: 2.86, z: 0}
-  m_LocalScale: {x: 2.117833, y: 3.3760464, z: 1}
+  m_LocalPosition: {x: 2.8751, y: 2.86, z: 0}
+  m_LocalScale: {x: 2.117833, y: 2.4814315, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1439,6 +1439,7 @@ MonoBehaviour:
   cooldown: 0
   cooldownTime: 2
   canAct: 0
+  specialattackpower: 40
   attackButton: {fileID: 2129474762}
   blockButton: {fileID: 1626883855}
   restButton: {fileID: 1715192957}
@@ -1614,8 +1615,8 @@ Transform:
   m_GameObject: {fileID: 2040843262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8978, y: -0.03, z: 0}
-  m_LocalScale: {x: 1.1237, y: 1.0469, z: 1}
+  m_LocalPosition: {x: 2.8712, y: -0.03, z: 0}
+  m_LocalScale: {x: 1.1098785, y: 1.0469, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

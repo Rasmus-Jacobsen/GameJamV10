@@ -19,10 +19,10 @@ public class Healthbar : MonoBehaviour
     {
         if (combatant == null || displayimage == null || healthSprites == null || healthSprites.Length == 0) return;
 
-        // safe normalized health between0 and1
+        
         float ratio = Mathf.Clamp01((float)combatant.health / Mathf.Max(1f, maxHealth));
 
-        // compute index in range [0, healthSprites.Length-1]
+       
         int index = Mathf.RoundToInt(ratio * (healthSprites.Length - 1));
         index = Mathf.Clamp(index, 0, healthSprites.Length - 1);
 

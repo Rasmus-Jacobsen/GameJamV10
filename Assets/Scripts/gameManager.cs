@@ -61,11 +61,22 @@ public class GameManager : MonoBehaviour
                 combatants.RemoveAt(i);
             }
         }
+       
+        currentCombatantIndex++;
+        if (currentCombatantIndex >= combatants.Count)
+        {
+            currentCombatantIndex = 0;
+        }
+        print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
+        combatants[currentCombatantIndex].Invoke("StartTurn", 1);// .StartTurn();
+    }
+    private void Update()
+    {
         if (combatants.Count <= 1)
         {
             if (combatants[0].gameObject.tag == "Player")
             {
-                if (currentSceneIndex +1 < totalScenes)
+                if (currentSceneIndex + 1 < totalScenes)
                 {
                     SceneManager.LoadScene(currentSceneIndex + 1);
                 }
@@ -75,12 +86,5 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        currentCombatantIndex++;
-        if (currentCombatantIndex >= combatants.Count)
-        {
-            currentCombatantIndex = 0;
-        }
-        print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
-        combatants[currentCombatantIndex].Invoke("StartTurn", 1);// .StartTurn();
     }
 }

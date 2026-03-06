@@ -479,8 +479,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatants:
   - {fileID: 997578368}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 360788918}
+  - {fileID: 520414545}
+  - {fileID: 1261841183}
   - {fileID: 1977696668}
   player: {fileID: 1977696668}
 --- !u!4 &430475432

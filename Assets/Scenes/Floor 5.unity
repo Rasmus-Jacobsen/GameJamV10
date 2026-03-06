@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatants:
+  - {fileID: 1309366158}
   - {fileID: 997578368}
   - {fileID: 2014837572}
   - {fileID: 1481678236}

@@ -391,10 +391,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1481678236}
   - {fileID: 1977696668}
+  - {fileID: 53233573}
+  - {fileID: 694187735}
+  - {fileID: 1355475280}
+  - {fileID: 1743663048}
+  - {fileID: 1481678236}
   player: {fileID: 1977696668}
 --- !u!4 &430475432
 Transform:

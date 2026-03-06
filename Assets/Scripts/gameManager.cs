@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,13 +51,11 @@ public class GameManager : MonoBehaviour
             print("byter scen");
             if (combatants[0].gameObject.tag == "Player")
             {
-                print("Byt till victory");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             }
             else if (combatants[0].gameObject.tag == "Enemy")
             {
-                print("byt till defeat");
                 SceneManager.LoadScene(12);
             }
         }
@@ -66,9 +63,6 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
-     //  print("Ending turn for " + combatants[currentCombatantIndex].gameObject.name);
-       
-
 
           currentCombatantIndex++;
         if (currentCombatantIndex >= combatants.Count)

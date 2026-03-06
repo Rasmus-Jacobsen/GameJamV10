@@ -11,7 +11,7 @@ public class Boss : Enemy
 
         if (player != null) // om spelaren inte är null.
         {
-            Bossstats();
+            
             
             int x = Random.Range(0, 100); // generar ett slumpmässigt tal mellan 0 och 100 för att bestämma bossens handling.
 

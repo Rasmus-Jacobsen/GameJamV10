@@ -60,6 +60,8 @@ public class Combatant : MonoBehaviour
         Debug.Log($"{gameObject.name} has been defeated!");
 
         Destroy(gameObject);
+        OnEndTurn();
+        GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
 
     }
     public void Rest() // function för att vila och ge spelaren energi
@@ -95,7 +97,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 10); // bestämmer att boss attacken gör 10 mer skada än en vanlig attack
+        target.TakeDamage(specialattackpower + 10); // bestämmer att boss attacken gör 10 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower + 10} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
@@ -104,7 +106,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 20); // bestämmer att boss attacken gör 20 mer skada än en vanlig attack
+        target.TakeDamage(specialattackpower + 20); // bestämmer att boss attacken gör 20 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} performs a devastating strike on {target.gameObject.name} for {attackPower + 20} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
@@ -113,15 +115,14 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 30); // bestämmer att boss attacken gör 30 mer skada än en vanlig attack
+        target.TakeDamage(specialattackpower); // bestämmer att boss attacken gör 30 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} performs an special attack on {target.gameObject.name} for {attackPower + 30} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
     public virtual void Bossstats() // function som ökar bossens stats när den når vissa hälsostadier
     {
-        health += 120; // ger bosen mer hälsa
-        attackPower += 20; // ger bosen mer attack power
+       
 
     }
 

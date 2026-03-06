@@ -64,21 +64,22 @@ public class GameManager : MonoBehaviour
         {
             if (combatants[0].gameObject.tag == "Player")
             {
-                
+
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             if (combatants[0].gameObject.tag == "Enemy")
             {
                 SceneManager.LoadScene(12);
             }
-        currentCombatantIndex++;
+        }
+          currentCombatantIndex++;
         if (currentCombatantIndex >= combatants.Count)
         {
             currentCombatantIndex = 0;
         }
         print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
-        combatants[currentCombatantIndex].Invoke("StartTurn", 1);// .StartTurn();
-        }
+            combatants[currentCombatantIndex].Invoke("StartTurn", 1);
+        
 
     }
 }

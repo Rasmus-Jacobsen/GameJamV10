@@ -8,6 +8,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Floor 1.unity
+    guid: ecfee24f3e0984e49beb9bce65f2c4e6
+  - enabled: 1
+    path: Assets/Scenes/Floor 2.unity
+    guid: 27a952f18b4ad2b49b35458b60191279
+  - enabled: 1
+    path: Assets/Scenes/Floor 3.unity
+    guid: f0492f9db5a3d9744be9be465243c022
+  - enabled: 1
+    path: Assets/Scenes/Floor 4.unity
+    guid: 7c4b583db4fa6ed4da0d605e1f576ef7
+  - enabled: 1
+    path: Assets/Scenes/Floor 5.unity
+    guid: daa6f564808408a4483c6dd1926a0b30
+  - enabled: 1
+    path: Assets/Scenes/Floor 6.unity
+    guid: 8c5a4fa349b15144aab5ec0979ee88cb
+  - enabled: 1
+    path: Assets/Scenes/Floor 7.unity
+    guid: 7475409bdb3ed9944915c70be1cc662f
+  - enabled: 1
+    path: Assets/Scenes/Floor 8.unity
+    guid: 3c4c214789bed2f4a94f3b65d87a8a26
+  - enabled: 1
+    path: Assets/Scenes/Floor 9.unity
+    guid: 23d9ab6ceaf649d4084554c3bc920a86
+  - enabled: 1
+    path: Assets/Scenes/Floor 10.unity
+    guid: 1ea487f6735c9f141817f84f5a10bc29
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 3329085c60b19bf4bbf3ea81e02d3582
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: ab378297696202548a915297fc7efe43
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -36,7 +36,7 @@ public class Combatant : MonoBehaviour
     {
 
         blocking = false;
-       print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
+        print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
         target.TakeDamage(attackPower);
         canAct = false;
         OnEndTurn();

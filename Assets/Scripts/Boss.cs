@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Boss : Combatant
+public class Boss : Enemy
 {
 
 
@@ -8,6 +8,7 @@ public class Boss : Combatant
     {
         base.StartTurn();
         Player player = FindAnyObjectByType<Player>();
+        
         if (player != null)
         {
             Bossstats();

@@ -15,41 +15,44 @@ public class Combatant : MonoBehaviour
         canAct = true;
 
     }
-    public virtual void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage) // fucntion som utförs när man tar skada 
     {
-        if (blocking)
+        if (blocking) // om man blockar 
         {
-            damage /= 2;
+            damage /= 2; // dela skada med 2
             Debug.Log($"{gameObject.name} is blocking! Damage reduced.");
         }
        
-        health -= damage;
+        health -= damage; 
 
-        if (health <= 0) Death();
+        if (health <= 0) // om hälsan är mindre än eller lika med 0 så dör man
+        {
+            Death();
+        }
 
     }
 
     
     protected virtual void OnEndTurn() { }
 
-    public virtual void Attack(Combatant target)
+    public virtual void Attack(Combatant target) // fucntion för bas attack för både spelare och fiende
     {
 
-        blocking = false;
+        blocking = false; // block avstängd när man attackerar
         print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
-        target.TakeDamage(attackPower);
-        canAct = false;
+        target.TakeDamage(attackPower); // utför attacken på target
+        canAct = false; // sätter så att man inte kan agera mer under samma tur
         OnEndTurn();
-        GameManager.Instance.EndTurn();
+        GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
 
     }
-    public virtual void Block()
+    public virtual void Block() // funktuion för att blocka för både spelare och fiende
     {
         canAct = false;
-        blocking = true;
+        blocking = true; // sätter så block är sant 
         print($"{gameObject.name} is blocking and will take reduced damage until their next turn!");
         OnEndTurn();
-        GameManager.Instance.EndTurn();
+        GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
     }
 
     public virtual void Death()
@@ -59,18 +62,18 @@ public class Combatant : MonoBehaviour
         Destroy(gameObject);
 
     }
-    public void Rest()
+    public void Rest() // function för att vila och ge spelaren energi
     {
         canAct = false;
         blocking = false;
-        energy++;
+        energy++; // ökar energin med 1
         Debug.Log($"{gameObject.name} rests and recovers energy. Current energy: {energy}");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
 
 
-    public virtual void skipturn()
+    public virtual void skipturn() // samma som rest men för fienden 
     {
         canAct = false;
         blocking = false;
@@ -79,20 +82,20 @@ public class Combatant : MonoBehaviour
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void SpecialAttack(Combatant target)
+    public virtual void SpecialAttack(Combatant target) // special attack functuon för både spelare och fiende.
     {
-        target.TakeDamage(specialattackpower);
+        target.TakeDamage(specialattackpower); // utför special attacken på target
         canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} special attacks  {target.gameObject.name} for {specialattackpower} damage");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void bossattack1(Combatant target)
+    public virtual void bossattack1(Combatant target) // boss attack numer 1, för bossen som gör mer skada än en vanlig attack
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 10);
+        target.TakeDamage(attackPower + 10); // bestämmer att boss attacken gör 10 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} attacks {target.gameObject.name} for {attackPower + 10} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
@@ -101,7 +104,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 20);
+        target.TakeDamage(attackPower + 20); // bestämmer att boss attacken gör 20 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} performs a devastating strike on {target.gameObject.name} for {attackPower + 20} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
@@ -110,15 +113,15 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        target.TakeDamage(attackPower + 30);
+        target.TakeDamage(attackPower + 30); // bestämmer att boss attacken gör 30 mer skada än en vanlig attack
         Debug.Log($"{gameObject.name} performs an special attack on {target.gameObject.name} for {attackPower + 30} damage!");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void Bossstats()
+    public virtual void Bossstats() // function som ökar bossens stats när den når vissa hälsostadier
     {
-        health += 120;
-        attackPower += 20;
+        health += 120; // ger bosen mer hälsa
+        attackPower += 20; // ger bosen mer attack power
 
     }
 

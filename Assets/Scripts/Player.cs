@@ -15,7 +15,7 @@ public class Player : Combatant
     {
         base.StartTurn();
         Debug.Log("Choose your action!");
-
+        //Läger till ui listeners för knapparna när spelarens tur börjar
         attackButton.onClick.AddListener(OnAttackButton);
         blockButton.onClick.AddListener(OnBlockButton);
         restButton.onClick.AddListener(OnRestButton);
@@ -26,7 +26,7 @@ public class Player : Combatant
 
     protected override void OnEndTurn()
     {
-        // remove UI listeners to avoid duplicate invocations next turn
+        // tar bort listners när turen r slut för att stoppa duplicering 
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
         restButton.onClick.RemoveListener(OnRestButton);
@@ -35,7 +35,7 @@ public class Player : Combatant
 
     private void Update()
     {
-        //slecting target with mouse click
+        //genom att skicka ut en raycast när man trycker på mus knappen så definerar man en target för när man ska attackera
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -64,21 +64,21 @@ public class Player : Combatant
         }
     }
 
-    public void OnAttackButton()
+    public void OnAttackButton() // attackera target när man trycker på attack knappen.
     {
-        // Use the selected target
+       
         Attack(target);
     }
 
-    public void OnBlockButton()
+    public void OnBlockButton() // blockera
     {
-        if (!canAct) return;
+        if (!canAct) return; // stoppar spelaren från att agera om det inte är hans tur
         Block();
     }
    
-    public void OnRestButton()
+    public void OnRestButton() // vila
     {
-        if (!canAct) return;
+        if (!canAct) return; 
         Rest();
         
     }

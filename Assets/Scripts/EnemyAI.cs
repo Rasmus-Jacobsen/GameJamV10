@@ -6,8 +6,8 @@ public class Enemy : Combatant
     {
         base.StartTurn();
         
-        Player player = FindAnyObjectByType<Player>();
-        if (player != null && canAct)
+        Player player = FindAnyObjectByType<Player>(); // letar efter spelaren i scenen
+        if (player != null && canAct) // om spelaren existerar och fienden kan agera
         {
 
             int x = Random.Range(0, 60);

@@ -6,18 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    
-    public List<Combatant> combatants = new List<Combatant>();
+
+    public List<Combatant> combatants = new List<Combatant>(); // En lista av all a fiender och spelare i scenen
     int currentCombatantIndex = 0;
     public Player player;
-    /*  public Enemy enemy;
-
-      public enum GameState
-      {
-          PlayerTurn = 0,
-          EnemyTurn = 1,
-      }
-      public GameState CurrentState;*/
 
     private void Awake()
     {
@@ -43,7 +35,7 @@ public class GameManager : MonoBehaviour
         {
             if (combatants[i] == null)
             {
-                combatants.RemoveAt(i);
+                combatants.RemoveAt(i); // om en combatant har dött så tas den bort från listan
             }
         }
         if (combatants.Count <= 1)
@@ -51,12 +43,12 @@ public class GameManager : MonoBehaviour
             print("byter scen");
             if (combatants[0].gameObject.tag == "Player")
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // om det bara finns en combatant kvar och den är spelaren så laddas nästa scen
 
             }
             else if (combatants[0].gameObject.tag == "Enemy")
             {
-                SceneManager.LoadScene(12);
+                SceneManager.LoadScene(12); // om det bara finns en combatant kvar och den är en fiende så laddas scenen med index 12, som är en game over scen
             }
         }
     }
@@ -64,14 +56,14 @@ public class GameManager : MonoBehaviour
     public void EndTurn()
     {
 
-          currentCombatantIndex++;
-        if (currentCombatantIndex >= combatants.Count)
+        currentCombatantIndex++;
+        if (currentCombatantIndex >= combatants.Count) 
         {
-            currentCombatantIndex = 0;
+            currentCombatantIndex = 0;  // omsätter index till 0 när det når slutet av listan, så att det börjar om från början
         }
-      //  print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
-            combatants[currentCombatantIndex].Invoke("StartTurn", 1);
-        
+
+        combatants[currentCombatantIndex].Invoke("StartTurn", 1); // startar nästa combatants tur efter en kort cooldown
+
 
     }
 }

@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if (combatants[0].gameObject.tag == "Player")
             {
-                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
         currentCombatantIndex++;

@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69327663ad1c5f41b1fd4beee11075b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10000000
+  health: 120
   attackPower: 20
   blocking: 0
   energy: 0
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e535869bca59a4d80c8c6b01c111b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 200
   attackPower: 20
   blocking: 0
   energy: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f5e2bbc5011d4b4d9a169c59a0a25e9
+guid: 81f91024477ff8c419f2ce07d3890b2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4676278524300351709
-    second: newest ui_0
+      213: 94881109671853046
+    second: floor_8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: newest ui_0
+      name: floor_8_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3272a4845758a1fb0800000000000000
-      internalID: -4676278524300351709
+      spriteID: 6fbb2e5ddd5115100800000000000000
+      internalID: 94881109671853046
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      newest ui_0: -4676278524300351709
+      floor_8_0: 94881109671853046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

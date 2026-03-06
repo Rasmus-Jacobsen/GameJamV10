@@ -64,9 +64,13 @@ public class GameManager : MonoBehaviour
         {
             if (combatants[0].gameObject.tag == "Player")
             {
+                
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-        }
+            if (combatants[0].gameObject.tag == "Enemy")
+            {
+                SceneManager.LoadScene(12);
+            }
         currentCombatantIndex++;
         if (currentCombatantIndex >= combatants.Count)
         {
@@ -74,5 +78,7 @@ public class GameManager : MonoBehaviour
         }
         print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
         combatants[currentCombatantIndex].Invoke("StartTurn", 1);// .StartTurn();
+        }
+
     }
 }

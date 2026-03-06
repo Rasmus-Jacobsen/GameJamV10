@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        currentCombatantIndex = 0;
         combatants[currentCombatantIndex].StartTurn();
     }
 
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void EndTurn()
     {
-       print("Ending turn for " + combatants[currentCombatantIndex].gameObject.name);
+     //  print("Ending turn for " + combatants[currentCombatantIndex].gameObject.name);
        
 
 
@@ -74,7 +75,7 @@ public class GameManager : MonoBehaviour
         {
             currentCombatantIndex = 0;
         }
-        print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
+      //  print("Starting turn for " + combatants[currentCombatantIndex].gameObject.name);
             combatants[currentCombatantIndex].Invoke("StartTurn", 1);
         
 

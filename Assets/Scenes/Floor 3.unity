@@ -1263,9 +1263,9 @@ GameObject:
   - component: {fileID: 1705430065}
   - component: {fileID: 1705430067}
   - component: {fileID: 1705430068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: office_worker_F_without_glow_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

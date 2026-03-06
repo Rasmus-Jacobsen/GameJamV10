@@ -37,21 +37,7 @@ public class GameManager : MonoBehaviour
         combatants[currentCombatantIndex].StartTurn();
     }
 
-    /*  public void StartPlayerTurn()
-      {
-          CurrentState = GameState.PlayerTurn;
-          player.StartTurn();
-          Debug.Log("Player's Turn!");
-      }
-
-      public void StartEnemyTurn()
-      {
-          CurrentState = GameState.EnemyTurn;
-         Enemy.FindAnyObjectByType<Enemy>().StartTurn();
-          Debug.Log("Enemy's Turn!");
-      }*/
-
-    public void EndTurn()
+    private void Update()
     {
         for (int i = 0; i < combatants.Count; i++)
         {
@@ -62,16 +48,27 @@ public class GameManager : MonoBehaviour
         }
         if (combatants.Count <= 1)
         {
+            print("byter scen");
             if (combatants[0].gameObject.tag == "Player")
             {
-
+                print("Byt till victory");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
             }
-            if (combatants[0].gameObject.tag == "Enemy")
+            else if (combatants[0].gameObject.tag == "Enemy")
             {
+                print("byt till defeat");
                 SceneManager.LoadScene(12);
             }
         }
+    }
+
+    public void EndTurn()
+    {
+       print("Ending turn for " + combatants[currentCombatantIndex].gameObject.name);
+       
+
+
           currentCombatantIndex++;
         if (currentCombatantIndex >= combatants.Count)
         {

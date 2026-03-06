@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2bb598bef53cc4fa64e768a612c98d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combatant: {fileID: 2131262328}
+  combatant: {fileID: 1603096197}
   maxHealth: 100
   healthSprites:
   - {fileID: -3400283028968244304, guid: b6b64904cd16af9438d8d371c2d0c4be, type: 3}
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 569889544}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

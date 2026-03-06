@@ -73,15 +73,9 @@ public class Player : Combatant
     public void OnBlockButton()
     {
         if (!canAct) return;
-        BlockAction();
+        Block();
     }
-    public void BlockAction()
-    {
-        if (!canAct) return;
-        blocking = true;
-        
-
-    }
+   
     public void OnRestButton()
     {
         if (!canAct) return;

@@ -236,8 +236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatants:
-  - {fileID: 997578368}
   - {fileID: 1977696668}
+  - {fileID: 997578368}
   player: {fileID: 1977696668}
 --- !u!4 &430475432
 Transform:

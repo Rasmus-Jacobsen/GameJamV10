@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // RASMUS
+
     public static GameManager Instance { get; private set; }
 
 

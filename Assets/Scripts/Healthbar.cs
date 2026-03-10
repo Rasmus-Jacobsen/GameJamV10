@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
+    // RASMUS
+
     public Combatant combatant;
     public float maxHealth;
     public Sprite[] healthSprites;

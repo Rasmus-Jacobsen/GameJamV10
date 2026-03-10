@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Enemy : Combatant
 {
+    // RASMUS
+
     public override void StartTurn()
     {
         base.StartTurn();

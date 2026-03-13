@@ -12,4 +12,8 @@ public class Menuscript : MonoBehaviour
     {
         Application.Quit(); // stänger ner applikationen(spelet)
     }
+    public void Retry() 
+    {
+        SceneManager.LoadScene(1);
+    }
 }

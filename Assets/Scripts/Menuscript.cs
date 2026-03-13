@@ -14,6 +14,6 @@ public class Menuscript : MonoBehaviour
     }
     public void Retry() 
     {
-        SceneManager.LoadScene(1);
+       SceneManager.LoadScene("MainMenu"); // laddar scenen MainMenu)
     }
 }

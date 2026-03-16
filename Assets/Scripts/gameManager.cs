@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
 
 
     public List<Combatant> combatants = new List<Combatant>(); // En lista av all a fiender och spelare i scenen
+    public List<GameObject> combatantsImages;
+
     int currentCombatantIndex = 0;
     public Player player;
 
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour
             if (combatants[i] == null)
             {
                 combatants.RemoveAt(i); // om en combatant har dött så tas den bort från listan
+                Destroy(combatantsImages[i]);
             }
         }
         if (combatants.Count <= 1)

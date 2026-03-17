@@ -1,0 +1,1191 @@
+fileFormatVersion: 2
+guid: 7dd29c63d371c8c4fb10f143d5920f15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3756080292399938830
+    second: Heatlh_Bar-Sheet_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0df7581027402430800000000000000
+      internalID: 3756080292399938830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a777a6840682df444b4987514aeb2266
+      internalID: -1181189470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 645
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2afb86ac746694ca47f694699669d9
+      internalID: -187766046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e311bdf03271c45819f23d1d4158b8
+      internalID: 256876823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 615
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91e7ffa473cfbb4da6847750aaf33d7
+      internalID: 1973936177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99396e162543d1b4582b993a4fc8cbcc
+      internalID: -2142152542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fb7b122fa7e2a45ba04ba3b9c228f8
+      internalID: 518582084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fce5025b11a3ee45a9e5eff34c14cfb
+      internalID: 1502841446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c3a46afe5b04645a2c0b9a60d6daa2
+      internalID: -332694863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113392aefb7d47d42a95a9f398010b51
+      internalID: -563015823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee5796d2420912419cd5c5cc9944e4d
+      internalID: 1198597325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbf97ac7841e3d488ee6ff48d7c76d3
+      internalID: 2037931358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e81f3a42447db489a864ebfac369df
+      internalID: -1753440073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507ac603060c7094e92602eb0f3133ca
+      internalID: -410984473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d35982c9a25af40b7f26c0e03c64ae
+      internalID: -1483003133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb52eab013baea40874cff36892780e
+      internalID: 229149986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48721b974cf3ae54f832783484b6183c
+      internalID: 2052023547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333d8804455d32b479daa9e0474b3cc8
+      internalID: -1766657852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfafaac441069d4fbad41351d331aa2
+      internalID: 223537571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f97807097e1d94cbc7d8aff968077b
+      internalID: 2029546874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0019fdd14c0c6574c9b32187e4ad450b
+      internalID: 319013382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd4f30069bcc5d47a0a9add84f754a8
+      internalID: -1097181938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e902a7dc2b5ee48bd4885b38184089
+      internalID: 1390549579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef0c58cb488b4e4aa810afe0cbcce65
+      internalID: 270993726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963b0fc4c8a3e244a854aacaf27e9e33
+      internalID: 1594238700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040d9ac65389bf34c886164dba25eb91
+      internalID: 22722290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d786ef75d3f9c429eec4aed5e19ab1
+      internalID: 1534351013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0870b28aa78121a4d98710855beb1a3f
+      internalID: 1284482646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a592cb05f2bff418e68ecd5239a7dd
+      internalID: -757009591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50238b92816ea65408282f92291c4212
+      internalID: 1000656211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d3b395245a9a340979e35c6eed012c
+      internalID: 1176303926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e95602d9b7ac534eabea1797b0c7ac9
+      internalID: 1982278658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1cf2c3339ae584f9ee830b52c5b59f
+      internalID: 1061952010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32849dc6c54a05f4a9465338116ecd3d
+      internalID: -890570736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825457522fedf89459733f44c3a089dd
+      internalID: -1618715321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2278719912fe44686f050bd75de6e0
+      internalID: -1659656203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8136c74fdd530f4294ab7400e32279d
+      internalID: 1510825990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f094c704f7f18b340a21cbf6b80abb68
+      internalID: -1890846665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea68db53908b9042951b3f0f2e93a0e
+      internalID: 1708140527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18152cfb86b19b8418f9443c041eb5b2
+      internalID: -1044427808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0838007935f13b348b5a9db8f06c6452
+      internalID: 2092976076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1f4362c6ebb6d49800028ce4c97e69
+      internalID: 954788280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df20dc2949642de48a2d208df45de3f9
+      internalID: -1668358526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fdd79707462cf4cb1ea12eb59509b8
+      internalID: 1796023963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6005a792f418d7e488ea9881ebde88e0
+      internalID: -874881153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heatlh_Bar-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd680db850025964b97303123ec42567
+      internalID: 384192328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 30763203440b50544a2b508390c36b67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Heatlh_Bar-Sheet_0: 3756080292399938830
+      Heatlh_Bar-Sheet_1: -1181189470
+      Heatlh_Bar-Sheet_10: 1198597325
+      Heatlh_Bar-Sheet_11: 2037931358
+      Heatlh_Bar-Sheet_12: -1753440073
+      Heatlh_Bar-Sheet_13: -410984473
+      Heatlh_Bar-Sheet_14: -1483003133
+      Heatlh_Bar-Sheet_15: 229149986
+      Heatlh_Bar-Sheet_16: 2052023547
+      Heatlh_Bar-Sheet_17: -1766657852
+      Heatlh_Bar-Sheet_18: 223537571
+      Heatlh_Bar-Sheet_19: 2029546874
+      Heatlh_Bar-Sheet_2: -187766046
+      Heatlh_Bar-Sheet_20: 319013382
+      Heatlh_Bar-Sheet_21: -1097181938
+      Heatlh_Bar-Sheet_22: 1390549579
+      Heatlh_Bar-Sheet_23: 270993726
+      Heatlh_Bar-Sheet_24: 1594238700
+      Heatlh_Bar-Sheet_25: 22722290
+      Heatlh_Bar-Sheet_26: 1534351013
+      Heatlh_Bar-Sheet_27: 1284482646
+      Heatlh_Bar-Sheet_28: -757009591
+      Heatlh_Bar-Sheet_29: 1000656211
+      Heatlh_Bar-Sheet_3: 256876823
+      Heatlh_Bar-Sheet_30: 1176303926
+      Heatlh_Bar-Sheet_31: 1982278658
+      Heatlh_Bar-Sheet_32: 1061952010
+      Heatlh_Bar-Sheet_33: -890570736
+      Heatlh_Bar-Sheet_34: -1618715321
+      Heatlh_Bar-Sheet_35: -1659656203
+      Heatlh_Bar-Sheet_36: 1510825990
+      Heatlh_Bar-Sheet_37: -1890846665
+      Heatlh_Bar-Sheet_38: 1708140527
+      Heatlh_Bar-Sheet_39: -1044427808
+      Heatlh_Bar-Sheet_4: 1973936177
+      Heatlh_Bar-Sheet_40: 2092976076
+      Heatlh_Bar-Sheet_41: 954788280
+      Heatlh_Bar-Sheet_42: -1668358526
+      Heatlh_Bar-Sheet_43: 1796023963
+      Heatlh_Bar-Sheet_44: -874881153
+      Heatlh_Bar-Sheet_45: 384192328
+      Heatlh_Bar-Sheet_5: -2142152542
+      Heatlh_Bar-Sheet_6: 518582084
+      Heatlh_Bar-Sheet_7: 1502841446
+      Heatlh_Bar-Sheet_8: -332694863
+      Heatlh_Bar-Sheet_9: -563015823
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

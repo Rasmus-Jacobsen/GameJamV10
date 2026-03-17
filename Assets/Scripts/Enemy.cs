@@ -5,8 +5,6 @@ public class Enemy : Combatant
 {
     // RASMUS
 
-    //public Enemy attackTarget;
-
     Player attackTarget;
 
     private void Start()

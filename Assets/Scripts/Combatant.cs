@@ -4,6 +4,7 @@ public class Combatant : MonoBehaviour
 {
     // RASMUS
 
+    public int maxHp;
     public int health = 80;
     public int attackPower = 20;
     public bool blocking;

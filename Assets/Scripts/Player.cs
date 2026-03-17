@@ -7,10 +7,9 @@ public class Player : Combatant
 
     public Button attackButton, blockButton, restButton, specialAttack;
 
-
-
     public LayerMask mask;
-    Enemy target;
+    public Enemy target;
+    
 
     public override void StartTurn()
     {
@@ -27,7 +26,7 @@ public class Player : Combatant
 
     protected override void OnEndTurn()
     {
-        // tar bort listners när turen r slut för att stoppa duplicering 
+        // tar bort listners när turen tar slut för att stoppa duplicering 
         attackButton.onClick.RemoveListener(OnAttackButton);
         blockButton.onClick.RemoveListener(OnBlockButton);
         restButton.onClick.RemoveListener(OnRestButton);
@@ -39,14 +38,19 @@ public class Player : Combatant
         //genom att skicka ut en raycast när man trycker på mus knappen så definerar man en target för när man ska attackera
         if (Input.GetMouseButtonDown(0))
         {
+            /*
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Collider2D col = Physics2D.OverlapPoint(worldPoint, mask);
             if (col != null)
             {
-                target = col.GetComponent<Enemy>();
+                enemy.attackTarget= col.GetComponent<Enemy>();
+                print($"The target is {target.name} and {target}");
             }
+            */
         }
     }
+
+
     public void OnSpecialAttackButton()
     {
 

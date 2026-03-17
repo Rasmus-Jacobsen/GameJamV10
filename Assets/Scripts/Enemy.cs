@@ -1,14 +1,25 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : Combatant
 {
     // RASMUS
+
+    //public Enemy attackTarget;
+
+    Player attackTarget;
+
+    private void Start()
+    {
+        attackTarget = FindAnyObjectByType<Player>();
+    }
 
     public override void StartTurn()
     {
         base.StartTurn();
         
         Player player = FindAnyObjectByType<Player>(); // letar efter spelaren i scenen
+        print(player);
         if (player != null && canAct) // om spelaren existerar och fienden kan agera
         {
 
@@ -67,6 +78,13 @@ public class Enemy : Combatant
 
 
 
+    }
+
+    public void SelectTarget()//Made the enemy's buttons so that we can make everything in the Ui and scaleble with any screen-Liam
+    {
+        attackTarget.target = GetComponent<Enemy>();
+
+        print($"{attackTarget.target} is sellected");
     }
 
 

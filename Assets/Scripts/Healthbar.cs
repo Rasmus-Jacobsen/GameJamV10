@@ -29,6 +29,6 @@ public class Healthbar : MonoBehaviour
         int index = Mathf.RoundToInt(ratio * (healthSprites.Length - 1)); // beräkna indexet för healthSprites baserat på hälsan, där 0 är full hälsa och healthSprites.Length - 1 är ingen hälsa.
         index = Mathf.Clamp(index, 0, healthSprites.Length - 1); // säkerställ att indexet är inom giltiga gränser för healthSprites arrayen.
 
-        displayimage.sprite = healthSprites[index]; // uppdatera displayimage med den korrekta sprite baserat på combatantens hälsa.
+        displayimage.sprite = healthSprites[healthSprites.Length - 1 - index]; // uppdatera displayimage med den korrekta sprite baserat på combatantens hälsa.
     }
 }

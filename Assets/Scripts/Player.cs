@@ -65,7 +65,7 @@ public class Player : Combatant
         {
             SpecialAttack(target);
 
-
+            energy--;
         }
     }
 

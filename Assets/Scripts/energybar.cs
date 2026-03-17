@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class energybar : MonoBehaviour
 {
     public Combatant combatant;
-    public int maxEnergy = 4;
+    public int maxEnergy = 5;
     public Sprite[] energySprites;
     public Image displayImage;
 

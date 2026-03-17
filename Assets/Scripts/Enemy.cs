@@ -7,7 +7,7 @@ public class Enemy : Combatant
 
     Player attackTarget;
 
-    private void Start()
+    private void Start()//-Liam
     {
         attackTarget = FindAnyObjectByType<Player>();
     }

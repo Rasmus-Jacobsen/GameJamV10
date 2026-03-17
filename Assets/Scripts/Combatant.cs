@@ -24,7 +24,9 @@ public class Combatant : MonoBehaviour
             damage /= 2; // dela skada med 2
             Debug.Log($"{gameObject.name} is blocking! Damage reduced.");
         }
-       
+
+        GetComponent<HurtScript>().Hurt();
+
         health -= damage; 
 
         if (health <= 0) // om hälsan är mindre än eller lika med 0 så dör man

@@ -5,12 +5,14 @@ using UnityEngine.EventSystems;
 public class EnemyHoverTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] bool isPlayer;
+    [SerializeField] bool isBoss;
     [SerializeField] private Player playerStats;
     [SerializeField] private Enemy enemyStats;
+    [SerializeField] private Boss bossStats;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (!isPlayer)
+        if (!isPlayer && !isBoss)
         {
             if (enemyStats == null) return;
 
@@ -21,6 +23,10 @@ public class EnemyHoverTooltip : MonoBehaviour, IPointerEnterHandler, IPointerEx
             if (playerStats == null) return;
 
             TooltipController.Instance?.Show($"HP {playerStats.health} / {playerStats.maxHp}");
+        }
+        else if (isBoss)
+        {
+            TooltipController.Instance?.Show($"HP {bossStats.health} / {bossStats.maxHp}");
         }
     }
 

@@ -62,15 +62,10 @@ public class Player : Combatant
         if (!canAct) return; // stoppar spelaren från att agera om det inte är hans tur
         Block();
     }
-   
+
     public void OnRestButton() // vila
     {
-        if (!canAct) return; 
+        if (!canAct) return;
         Rest();
-        
     }
-  
-
-
-
 }

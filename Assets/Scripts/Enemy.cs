@@ -4,8 +4,8 @@ using static UnityEngine.GraphicsBuffer;
 public class Enemy : Combatant
 {
     // RASMUS
-    [SerializeField] GameObject targetArrow;
-    Player attackTarget;
+    public GameObject targetArrow;
+    public Player attackTarget;
     bool istarget;
 
     private void Start()//-Liam

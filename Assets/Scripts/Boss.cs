@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Boss : Enemy
 {
+    // Player attackTarget;
+    // [SerializeField] GameObject targetArrow;
+
+    private void Start()//-Liam
+    {
+        attackTarget = FindAnyObjectByType<Player>();
+    }
 
     // RASMUS
     public override void StartTurn()
@@ -70,5 +77,28 @@ public class Boss : Enemy
                 }
             }
         }
+    }
+
+    public void SelectTarget()//Made the enemies buttons so that we can make everything in the Ui and scaleble with any screen-Liam
+    {
+        attackTarget.target = GetComponent<Boss>();
+
+        print($"{attackTarget.target} is sellected");
+
+
+
+    }
+    public void Update()
+    {
+        if (attackTarget.target == GetComponent<Boss>())
+        {
+            targetArrow.SetActive(true);
+        }
+        else
+        {
+            targetArrow.SetActive(false);
+        }
+
+
     }
 }

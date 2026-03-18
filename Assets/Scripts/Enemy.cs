@@ -4,8 +4,9 @@ using static UnityEngine.GraphicsBuffer;
 public class Enemy : Combatant
 {
     // RASMUS
-
+    [SerializeField] GameObject targetArrow;
     Player attackTarget;
+    bool istarget;
 
     private void Start()//-Liam
     {
@@ -15,7 +16,7 @@ public class Enemy : Combatant
     public override void StartTurn()
     {
         base.StartTurn();
-        
+
         Player player = FindAnyObjectByType<Player>(); // letar efter spelaren i scenen
         print(player);
         if (player != null && canAct) // om spelaren existerar och fienden kan agera
@@ -83,7 +84,22 @@ public class Enemy : Combatant
         attackTarget.target = GetComponent<Enemy>();
 
         print($"{attackTarget.target} is sellected");
+        
+
+
     }
+    public void Update()
+    {
+       if (attackTarget.target == GetComponent<Enemy>())
+        {
+            targetArrow.SetActive(true);
+        }
+        else
+        {
+            targetArrow.SetActive(false);
+        }
 
 
+    }
 }
+

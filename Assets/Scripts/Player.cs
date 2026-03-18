@@ -33,39 +33,21 @@ public class Player : Combatant
         specialAttack.onClick.RemoveListener(OnSpecialAttackButton);
     }
 
-    private void Update()
-    {
-        //genom att skicka ut en raycast när man trycker på mus knappen så definerar man en target för när man ska attackera
-        if (Input.GetMouseButtonDown(0))
-        {
-            /*
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D col = Physics2D.OverlapPoint(worldPoint, mask);
-            if (col != null)
-            {
-                enemy.attackTarget= col.GetComponent<Enemy>();
-                print($"The target is {target.name} and {target}");
-            }
-            */
-        }
-    }
-
-
     public void OnSpecialAttackButton()
     {
 
         if (!canAct) return;
 
-        if (energy < 1)
+        if (energy < 3)
         {
             return;
         }
 
-        else if (energy >= 1)
+        else if (energy >= 3)
         {
             SpecialAttack(target);
 
-            energy--;
+            energy -= 3;
         }
     }
 

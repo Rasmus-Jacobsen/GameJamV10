@@ -1573,6 +1573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69327663ad1c5f41b1fd4beee11075b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 0
   health: 160
   attackPower: 20
   blocking: 0
@@ -1588,6 +1589,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+  target: {fileID: 0}
 --- !u!1 &2040843262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1602,7 @@ GameObject:
   - component: {fileID: 2040843263}
   - component: {fileID: 2040843265}
   - component: {fileID: 2040843266}
+  - component: {fileID: 2040843267}
   m_Layer: 3
   m_Name: Boss_without_glow_0
   m_TagString: Enemy
@@ -1689,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e535869bca59a4d80c8c6b01c111b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 0
   health: 200
   attackPower: 20
   blocking: 0
@@ -1743,6 +1747,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.84375, y: 3.96875}
   m_EdgeRadius: 0
+--- !u!114 &2040843267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040843262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f69560c069c6d4292f632f947d8ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.15
+  shakeMagnitude: 10
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2136924227
 GameObject:
   m_ObjectHideFlags: 0

@@ -715,7 +715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623282baa983cc54ba34c1f777475dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipText: Deals 40 damage to the selected enemy and costs 1 energy to use
+  tooltipText: Deals 40 damage to the selected enemy and costs 3 energy to use
 --- !u!1 &663070460
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 742454245}
   - component: {fileID: 742454246}
   - component: {fileID: 742454247}
+  - component: {fileID: 742454248}
   m_Layer: 5
   m_Name: Player
   m_TagString: Player
@@ -932,6 +933,50 @@ MonoBehaviour:
   isPlayer: 1
   playerStats: {fileID: 742454245}
   enemyStats: {fileID: 0}
+--- !u!114 &742454248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742454241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    m_PressedColor: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 742454243}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &784353744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623282baa983cc54ba34c1f777475dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipText: Makes you skip a turn and gain 1 energy
+  tooltipText: Makes you skip a turn and gain 1 more energy than usual
 --- !u!1 &1792000048
 GameObject:
   m_ObjectHideFlags: 0

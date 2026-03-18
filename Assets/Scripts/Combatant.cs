@@ -45,6 +45,7 @@ public class Combatant : MonoBehaviour
 
         blocking = false; // block avstängd när man attackerar
         print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
+        energy++;
         target.TakeDamage(attackPower); // utför attacken på target
         canAct = false; // sätter så att man inte kan agera mer under samma tur
         OnEndTurn();
@@ -55,6 +56,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = true; // sätter så block är sant 
+        energy++;
         print($"{gameObject.name} is blocking and will take reduced damage until their next turn!");
         OnEndTurn();
         GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
@@ -73,7 +75,7 @@ public class Combatant : MonoBehaviour
     {
         canAct = false;
         blocking = false;
-        energy++; // ökar energin med 1
+        energy += 2; // ökar energin med 1 mer än vanligt
         Debug.Log($"{gameObject.name} rests and recovers energy. Current energy: {energy}");
         OnEndTurn();
         GameManager.Instance.EndTurn();
@@ -92,6 +94,7 @@ public class Combatant : MonoBehaviour
     public virtual void SpecialAttack(Combatant target) // special attack functuon för både spelare och fiende.
     {
         target.TakeDamage(specialattackpower); // utför special attacken på target
+        energy++;
         canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} special attacks  {target.gameObject.name} for {specialattackpower} damage");

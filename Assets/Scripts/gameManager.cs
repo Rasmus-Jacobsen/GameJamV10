@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -29,19 +30,25 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        currentCombatantIndex = 0;
+        //combatants.Clear();
+
+        //combatants.Add(player);
+
+        //currentCombatantIndex = 0;
         combatants[currentCombatantIndex].StartTurn();
     }
 
     private void Update()
     {
-        for (int i = 0; i < combatants.Count; i++)
+        for (int i = combatants.Count - 1; i >= 0; i--)
         {
             if (combatants[i] == null)
             {
                 combatants.RemoveAt(i); // om en combatant har dött så tas den bort från listan
             }
         }
+        
+        /*
         if (combatants.Count <= 1)
         {
             print("byter scen");
@@ -55,6 +62,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(12); // om det bara finns en combatant kvar och den är en fiende så laddas scenen med index 12, som är en game over scen
             }
         }
+        */
     }
 
     public void EndTurn()
@@ -69,5 +77,22 @@ public class GameManager : MonoBehaviour
         combatants[currentCombatantIndex].Invoke("StartTurn", 1); // startar nästa combatants tur efter en kort cooldown
 
 
+    }
+
+    public void EndSceneLoader(GameObject deadBeing)
+    {
+        print(combatants.Count);
+
+        if (CompareTag("Player"))
+        {
+                SceneManager.LoadScene(12);
+        }
+
+  
+        if (CompareTag("Enemy"))
+        {
+            if (combatants.Count == 1)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

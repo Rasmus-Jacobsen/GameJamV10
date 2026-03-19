@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Sprite-based energy bar (Option A)
-public class energybar : MonoBehaviour
+public class Energybar : MonoBehaviour
 {
     public Combatant combatant;
     public int maxEnergy = 5;

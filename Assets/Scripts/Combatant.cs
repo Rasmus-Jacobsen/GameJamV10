@@ -13,6 +13,15 @@ public class Combatant : MonoBehaviour
     public float cooldownTime = 2f;
     public bool canAct = false;
     public int specialattackpower = 40;
+
+    protected virtual void Awake()
+    {
+        if (CompareTag("Enemy"))
+        {
+            GameManager.Instance.combatants.Add(this);
+        }
+    }
+
     public virtual void StartTurn()
     {
         canAct = true;
@@ -66,6 +75,9 @@ public class Combatant : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} has been defeated!");
 
+        print(gameObject.name);
+        GameManager.Instance.EndSceneLoader(gameObject);
+
         Destroy(gameObject);
         OnEndTurn();
         GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
@@ -82,7 +94,7 @@ public class Combatant : MonoBehaviour
     }
 
 
-    public virtual void skipturn() // samma som rest men för fienden 
+    public virtual void Skipturn() // samma som rest men för fienden 
     {
         canAct = false;
         blocking = false;
@@ -94,14 +106,14 @@ public class Combatant : MonoBehaviour
     public virtual void SpecialAttack(Combatant target) // special attack functuon för både spelare och fiende.
     {
         target.TakeDamage(specialattackpower); // utför special attacken på target
-        energy++;
+        
         canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} special attacks  {target.gameObject.name} for {specialattackpower} damage");
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void bossattack1(Combatant target) // boss attack numer 1, för bossen som gör mer skada än en vanlig attack
+    public virtual void Bossattack1(Combatant target) // boss attack numer 1, för bossen som gör mer skada än en vanlig attack
     {
         canAct = false;
         blocking = false;
@@ -110,7 +122,7 @@ public class Combatant : MonoBehaviour
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void bossattack2(Combatant target)
+    public virtual void Bossattack2(Combatant target)
     {
         canAct = false;
         blocking = false;
@@ -119,7 +131,7 @@ public class Combatant : MonoBehaviour
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void bossattack3(Combatant target)
+    public virtual void Bossattack3(Combatant target)
     {
         canAct = false;
         blocking = false;

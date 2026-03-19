@@ -39,7 +39,7 @@ public class Enemy : Combatant
                 }
                 else if (x <= 55)
                 {
-                    skipturn();
+                    Skipturn();
                     canAct = false;
                 }
                 else

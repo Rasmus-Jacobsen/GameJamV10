@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1444457618227421729}
   - component: {fileID: 4520239457352197405}
   m_Layer: 3
-  m_Name: Enemy3
+  m_Name: Kettle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

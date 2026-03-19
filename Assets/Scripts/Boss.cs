@@ -26,7 +26,7 @@ public class Boss : Enemy
             {
                 if (x <= 80) // om det slumpmässiga talet är mindre än eller lika med 80, utför bossattack1.
                 {
-                    bossattack1(player);
+                    Bossattack1(player);
                     canAct = false;
                 }
                 else // om det slumpmässiga talet är större än 80
@@ -39,12 +39,12 @@ public class Boss : Enemy
             {
                 if (x <= 40) // om det slumpmässiga talet är mindre än eller lika med 40
                 {
-                    bossattack1(player);
+                    Bossattack1(player);
                     canAct = false;
                 }
                 else if (x <= 80) // om det slumpmässiga talet är mindre än eller lika med 80
                 {
-                    bossattack2(player);
+                    Bossattack2(player);
                     canAct = false;
                 }
                 else // om det slumpmässiga talet är större än 80
@@ -57,17 +57,17 @@ public class Boss : Enemy
             {
                 if (x <= 20) // om det slumpmässiga talet är mindre än eller lika med 20
                 {
-                    bossattack1(player);
+                    Bossattack1(player);
                     canAct = false;
                 }
                 else if (x <= 60) // om det slumpmässiga talet är mindre än eller lika med 60
                 {
-                    bossattack2(player);
+                    Bossattack2(player);
                     canAct = false;
                 }
                 else if (x <= 80) // om det slumpmässiga talet är mindre än eller lika med 80
                 {
-                    bossattack3(player);
+                    Bossattack3(player);
                     canAct = false;
                 }
                 else // om det slumpmässiga talet är större än 80

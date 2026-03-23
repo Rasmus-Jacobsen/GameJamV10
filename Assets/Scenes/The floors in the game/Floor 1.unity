@@ -373,14 +373,14 @@ MonoBehaviour:
   workerFemalePrefab: {fileID: 4786321987091705326, guid: 8a8be49facb57b54faa74c7837d821a6, type: 3}
   kettlePrefab: {fileID: 511860833193330592, guid: 41c58aba5421a0843ac679f6362487ad, type: 3}
   guardPrefab: {fileID: 7975216469770050754, guid: 43189423d21b12448ab3a87108e08f89, type: 3}
-  miniBossPrefab: {fileID: 0}
+  miniBossPrefab: {fileID: 8474579702223529385, guid: 31b4f0905550650448588c323b601ab3, type: 3}
   bossPrefab: {fileID: 4063817280611183057, guid: 9fa4d67769f013944869e1a6d8044833, type: 3}
   spawnPoints:
   - {fileID: 1497692420}
   - {fileID: 1436032033}
   - {fileID: 200364374}
   - {fileID: 2070199198}
-  currentFloor: 2
+  currentFloor: 4
 --- !u!1 &432344862
 GameObject:
   m_ObjectHideFlags: 0

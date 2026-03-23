@@ -76,7 +76,7 @@ public class EnemySpawnManager : MonoBehaviour
                 break;
 
             case 4:
-                //Spawn(miniBossPrefab, 1);
+                Spawn(miniBossPrefab, 1);
 
                 if (Random.value < 0.2f)
                 {
@@ -118,7 +118,7 @@ public class EnemySpawnManager : MonoBehaviour
                     Spawn(guardPrefab, 1);
 
                 if (Random.value < 0.1f)
-                    //Spawn(miniBossPrefab, 1);
+                    Spawn(miniBossPrefab, 1);
                     print("MiniBoss spawned");
 
                 break;

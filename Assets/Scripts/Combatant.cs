@@ -140,11 +140,29 @@ public class Combatant : MonoBehaviour
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }
-    public virtual void Bossstats() // function som ökar bossens stats när den når vissa hälsostadier
+    public virtual void miniBossattack(Combatant target) 
     {
-       
-
+        canAct = false;
+        blocking = false;
+        target.TakeDamage(attackPower + 5);
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
     }
-
+    public virtual void miniBossHeal()
+    {
+        canAct = false;
+        blocking = false;
+        health += 20; 
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
+    }
+    public virtual void miniBossattack2(Combatant target)
+    {
+        canAct = false;
+        blocking = false;
+        target.TakeDamage(specialattackpower + 10);
+        OnEndTurn();
+        GameManager.Instance.EndTurn();
+    }
 
 }

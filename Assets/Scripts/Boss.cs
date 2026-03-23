@@ -24,7 +24,7 @@ public class Boss : Enemy
 
             if (health <= 121) // om bossens hälsa är mindre än eller lika med 121, utför en uppsättning handlingar baserat på det slumpmässiga talet.
             {
-                if (x <= 80) // om det slumpmässiga talet är mindre än eller lika med 80, utför bossattack1.
+                if (x <= 50) // om det slumpmässiga talet är mindre än eller lika med 80, utför bossattack1.
                 {
                     Bossattack1(player);
                     canAct = false;
@@ -79,7 +79,7 @@ public class Boss : Enemy
         }
     }
 
-    public void SelectTarget()//Made the enemies buttons so that we can make everything in the Ui and scaleble with any screen-Liam
+    public void selectTarget()//Made the enemies buttons so that we can make everything in the Ui and scaleble with any screen-Liam
     {
         attackTarget.target = GetComponent<Boss>();
 

@@ -277,15 +277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a00f7646fd4de0349bc2510c19b4fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 40
-  health: 40
+  maxHp: 20
+  health: 20
   attackPower: 5
   blocking: 0
   energy: 0
   cooldown: 0
   cooldownTime: 2
   canAct: 0
-  specialattackpower: 40
+  specialattackpower: 11
   targetArrow: {fileID: 2382403162206832656}
   attackTarget: {fileID: 0}
 --- !u!114 &1958153399295460911

@@ -260,9 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e535869bca59a4d80c8c6b01c111b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 200
-  health: 200
-  attackPower: 20
+  maxHp: 120
+  health: 120
+  attackPower: 10
   blocking: 0
   energy: 0
   cooldown: 0

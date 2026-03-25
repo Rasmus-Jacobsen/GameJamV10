@@ -16,7 +16,7 @@ public class Boss : Enemy
         base.StartTurn();
         Player player = FindAnyObjectByType<Player>(); // letar efter spelaren i scenen
 
-        if (player != null) // om spelaren inte är null.
+        if (player != null && canAct) // om spelaren inte är null.
         {
             
             

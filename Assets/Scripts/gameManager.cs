@@ -83,15 +83,15 @@ public class GameManager : MonoBehaviour
     {
         print(combatants.Count);
 
-        if (CompareTag("Player"))
+        if (deadBeing.CompareTag("Player"))
         {
                 SceneManager.LoadScene(12);
         }
 
   
-        if (CompareTag("Enemy"))
+        if (deadBeing.CompareTag("Enemy"))
         {
-            if (combatants.Count == 1)
+            if (combatants.Count == 2)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

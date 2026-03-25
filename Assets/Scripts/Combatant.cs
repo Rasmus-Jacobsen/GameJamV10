@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Combatant : MonoBehaviour
 {
@@ -56,9 +57,12 @@ public class Combatant : MonoBehaviour
         print($"{gameObject.name} attacks {target.gameObject.name} for {attackPower} damage!");
         energy++;
         target.TakeDamage(attackPower); // utför attacken på target
+        GetComponent<HurtScript>().AttackAnim();
         canAct = false; // sätter så att man inte kan agera mer under samma tur
         OnEndTurn();
         GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
+
+
 
     }
     public virtual void Block() // funktuion för att blocka för både spelare och fiende
@@ -67,6 +71,7 @@ public class Combatant : MonoBehaviour
         blocking = true; // sätter så block är sant 
         energy++;
         print($"{gameObject.name} is blocking and will take reduced damage until their next turn!");
+        GetComponent<HurtScript>().DefendingAnim();
         OnEndTurn();
         GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
     }
@@ -75,13 +80,15 @@ public class Combatant : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} has been defeated!");
 
-        print(gameObject.name);
-        GameManager.Instance.EndSceneLoader(gameObject);
 
-        Destroy(gameObject);
         OnEndTurn();
         GameManager.Instance.EndTurn(); // avslutar turen när functionen är genomförd
 
+        print(gameObject.name + "is dead");
+
+        GameManager.Instance.EndSceneLoader(gameObject);
+
+        Destroy(gameObject);
     }
     public void Rest() // function för att vila och ge spelaren energi
     {
@@ -110,6 +117,7 @@ public class Combatant : MonoBehaviour
         canAct = false;
         blocking = false;
         Debug.Log($"{gameObject.name} special attacks  {target.gameObject.name} for {specialattackpower} damage");
+        GetComponent<HurtScript>().SpecialAttackAnim();
         OnEndTurn();
         GameManager.Instance.EndTurn();
     }

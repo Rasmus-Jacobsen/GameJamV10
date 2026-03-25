@@ -300,9 +300,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f69560c069c6d4292f632f947d8ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 0.1
+  shakeDuration: 0.25
+  attackShakeDuration: 0.5
+  attackShakeMagnitude: 10
   shakeMagnitude: 5
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  defenceColor: {r: 0, g: 1, b: 1, a: 1}
+  specialAttackColor: {r: 1, g: 0.5019608, b: 0, a: 1}
 --- !u!114 &5094439019850745676
 MonoBehaviour:
   m_ObjectHideFlags: 0

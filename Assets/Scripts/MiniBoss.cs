@@ -13,7 +13,7 @@ public class MiniBoss : Enemy
         base.StartTurn();
         Player player = FindAnyObjectByType<Player>(); 
 
-        if (player != null) 
+        if (player != null && canAct) 
         {
 
 

@@ -168,9 +168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f69560c069c6d4292f632f947d8ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 0.1
+  shakeDuration: 0.25
+  attackShakeDuration: 0.5
+  attackShakeMagnitude: 10
   shakeMagnitude: 5
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  defenceColor: {r: 0, g: 1, b: 1, a: 1}
+  specialAttackColor: {r: 1, g: 0.5019608, b: 0, a: 1}
 --- !u!114 &826322481040649561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2bb598bef53cc4fa64e768a612c98d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combatant: {fileID: 0}
+  combatant: {fileID: 4838358316867404377}
   maxHealth: 100
   healthSprites:
   - {fileID: 6661024044440122085, guid: 1fa520246962fa342ba5fd39a5cd736c, type: 3}

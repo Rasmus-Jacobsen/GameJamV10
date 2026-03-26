@@ -35,7 +35,7 @@ public class Player : Combatant
 
     public void OnSpecialAttackButton()
     {
-
+        AudioManager.Instance.PlayButtonClick();
         if (!canAct) return;
 
         if (energy < 3)
@@ -53,18 +53,20 @@ public class Player : Combatant
 
     public void OnAttackButton() // attackera target när man trycker på attack knappen.
     {
-       
+        AudioManager.Instance.PlayButtonClick();
         Attack(target);
     }
 
     public void OnBlockButton() // blockera
     {
+        AudioManager.Instance.PlayButtonClick();
         if (!canAct) return; // stoppar spelaren från att agera om det inte är hans tur
         Block();
     }
 
     public void OnRestButton() // vila
     {
+        AudioManager.Instance.PlayButtonClick();
         if (!canAct) return;
         Rest();
     }

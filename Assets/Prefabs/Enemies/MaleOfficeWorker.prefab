@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f69560c069c6d4292f632f947d8ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 1
   shakeDuration: 0.25
   attackShakeDuration: 0.5
   attackShakeMagnitude: 10

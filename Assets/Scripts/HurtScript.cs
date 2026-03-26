@@ -6,6 +6,9 @@ using System.Collections;
 // Liam
 public class HurtScript : MonoBehaviour
 {
+    [Header("Audio")]
+    public EnemyType enemyType;
+
     [Header("Shake")]
     public float shakeDuration = 0.15f;
     public float attackShakeDuration = 0.25f;
@@ -39,7 +42,11 @@ public class HurtScript : MonoBehaviour
     public void Hurt()
     {
         if (!isHurting)
+        {
+            AudioManager.Instance.PlayHurtSfx(enemyType);
             StartCoroutine(HurtCoroutine());
+        }
+
     }
 
     public void AttackAnim()

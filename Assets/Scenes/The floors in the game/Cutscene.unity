@@ -812,7 +812,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 749989515}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.2545744
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -997,7 +997,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2042043777}
   - component: {fileID: 2042043776}
-  - component: {fileID: 2042043775}
   - component: {fileID: 2042043778}
   - component: {fileID: 2042043779}
   m_Layer: 0
@@ -1007,14 +1006,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2042043775
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042043774}
-  m_Enabled: 1
 --- !u!20 &2042043776
 Camera:
   m_ObjectHideFlags: 0

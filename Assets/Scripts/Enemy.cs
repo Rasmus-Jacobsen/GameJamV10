@@ -81,6 +81,7 @@ public class Enemy : Combatant
 
     public void SelectTarget()//Made the enemy's buttons so that we can make everything in the Ui and scaleble with any screen-Liam
     {
+        AudioManager.Instance.PlayButtonClick();
         attackTarget.target = GetComponent<Enemy>();
 
         print($"{attackTarget.target} is sellected");

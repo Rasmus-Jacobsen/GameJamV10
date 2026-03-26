@@ -845,7 +845,6 @@ GameObject:
   m_Component:
   - component: {fileID: 442314741}
   - component: {fileID: 442314740}
-  - component: {fileID: 442314739}
   - component: {fileID: 442314742}
   - component: {fileID: 442314743}
   m_Layer: 0
@@ -855,14 +854,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &442314739
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442314738}
-  m_Enabled: 1
 --- !u!20 &442314740
 Camera:
   m_ObjectHideFlags: 0
@@ -1206,7 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623282baa983cc54ba34c1f777475dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipText: Deals 40 damage to the selected enemy and costs 3 energy to use
+  tooltipText: Deals 20 damage to the selected enemy and costs 3 energy to use
 --- !u!1 &647231078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f69560c069c6d4292f632f947d8ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 0
   shakeDuration: 0.25
   attackShakeDuration: 0.5
   attackShakeMagnitude: 10
@@ -3576,7 +3568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623282baa983cc54ba34c1f777475dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipText: Deals 10 damage to the selected enemy
+  tooltipText: Deals 8 damage to the selected enemy
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

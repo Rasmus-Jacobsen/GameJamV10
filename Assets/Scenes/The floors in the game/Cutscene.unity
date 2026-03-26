@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   credits: {fileID: 0}
+  ingameMenu: {fileID: 0}
+  map: {fileID: 0}
 --- !u!4 &503211263
 Transform:
   m_ObjectHideFlags: 0
@@ -810,7 +812,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 749989515}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0
+  m_Size: 0.2545744
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -844,7 +846,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 32
 --- !u!222 &2003922717
 CanvasRenderer:
   m_ObjectHideFlags: 0

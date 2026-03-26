@@ -960,6 +960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   credits: {fileID: 168614965}
+  ingameMenu: {fileID: 0}
+  map: {fileID: 0}
 --- !u!1 &1606009050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   credits: {fileID: 0}
+  ingameMenu: {fileID: 0}
+  map: {fileID: 0}
 --- !u!1 &2050445817
 GameObject:
   m_ObjectHideFlags: 0

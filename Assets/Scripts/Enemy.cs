@@ -22,7 +22,7 @@ public class Enemy : Combatant
         if (player != null && canAct) // om spelaren existerar och fienden kan agera
         {
 
-            int x = Random.Range(0, 60);
+            int x = Random.Range(0, 99);
             if (health <= 50)
             {
                 if (x <= 5)
@@ -31,7 +31,7 @@ public class Enemy : Combatant
                     Attack(player);
                     canAct = false;
                 }
-                else if (x <= 50)
+                else if (x <= 40)
                 {
                     Block();
                     canAct = false;

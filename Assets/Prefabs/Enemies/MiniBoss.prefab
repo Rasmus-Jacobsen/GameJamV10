@@ -355,7 +355,7 @@ MonoBehaviour:
   isPlayer: 0
   isBoss: 0
   playerStats: {fileID: 0}
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 2714343360523076732}
   bossStats: {fileID: 0}
 --- !u!114 &2714343360523076732
 MonoBehaviour:

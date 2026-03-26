@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
 
         if (deadBeing.CompareTag("Player"))
         {
-                SceneManager.LoadScene(12);
+                SceneManager.LoadScene(11);
         }
 
   

@@ -49,7 +49,7 @@ public class Enemy : Combatant
                 }
 
             }
-            if (health > 50)
+            if (health >= 51)
             {
                 if (x < 5)
                 {
@@ -92,13 +92,13 @@ public class Enemy : Combatant
     public void Update()
     {
        if (attackTarget.target == GetComponent<Enemy>())
-        {
+       {
             targetArrow.SetActive(true);
-        }
-        else
-        {
-            targetArrow.SetActive(false);
-        }
+       }
+       else
+       {
+           targetArrow.SetActive(false);
+       }
 
 
     }

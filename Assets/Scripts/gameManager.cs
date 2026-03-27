@@ -47,7 +47,14 @@ public class GameManager : MonoBehaviour
                 combatants.RemoveAt(i); // om en combatant har dött så tas den bort från listan
             }
         }
-        
+
+        /*
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SceneManager.LoadScene(9);
+        }
+        */
+
         /*
         if (combatants.Count <= 1)
         {

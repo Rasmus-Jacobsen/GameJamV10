@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 430475433}
   - component: {fileID: 430475434}
   - component: {fileID: 430475435}
+  - component: {fileID: 430475436}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -737,6 +738,23 @@ MonoBehaviour:
   credits: {fileID: 942733765}
   ingameMenu: {fileID: 555843564}
   map: {fileID: 948379232}
+--- !u!114 &430475436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430475430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54212242ab7fa8498fe796b5a93b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImages:
+  - {fileID: -4268882951632529609, guid: 338a49264d511ac4cac446ec91a01d3b, type: 3}
+  - {fileID: -8897400969161537919, guid: 09391a0b53507fa4a87c92ee9d3f7682, type: 3}
+  - {fileID: 252869847158136580, guid: cfcbb39923a868547b5a0bb206a5cfad, type: 3}
+  backgroundTarget: {fileID: 1540822853}
 --- !u!1 &432344862
 GameObject:
   m_ObjectHideFlags: 0

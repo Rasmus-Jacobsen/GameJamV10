@@ -30,7 +30,7 @@ public class Menuscript : MonoBehaviour
     public void OpenCredits()
     {
         AudioManager.Instance.PlayButtonClick();
-        credits.SetActive(true);
+        //credits.SetActive(true);
     }
     public void CloseCredits()
     {
